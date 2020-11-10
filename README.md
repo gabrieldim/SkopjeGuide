@@ -1,4 +1,3 @@
-# SkopjeGuide
-## SRS Document
+# Skopje Guide
 
 
