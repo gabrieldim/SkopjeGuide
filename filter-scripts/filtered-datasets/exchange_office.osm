@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmfilter 1.4.4">
+	<bounds minlat="41.9053" minlon="21.2537" maxlat="42.088" maxlon="21.6959"/>
+	<node id="1860365651" lat="42.0019375" lon="21.4648061" version="2" timestamp="2012-11-10T14:03:44Z" changeset="13821123" uid="131662" user="borces">
+		<tag k="amenity" v="bureau_de_change"/>
+		<tag k="office" v="yes"/>
+	</node>
+	<node id="3003497925" lat="41.9969234" lon="21.4383163" version="2" timestamp="2014-09-29T11:15:19Z" changeset="25744175" uid="2037651" user="Francois555">
+		<tag k="amenity" v="bureau_de_change"/>
+		<tag k="name" v="exchange"/>
+	</node>
+	<node id="3830455731" lat="41.9823413" lon="21.472668" version="2" timestamp="2015-11-11T10:34:02Z" changeset="35236373" uid="3378476" user="Wallker">
+		<tag k="amenity" v="bureau_de_change"/>
+		<tag k="name" v="Менувачница"/>
+	</node>
+	<node id="4250231589" lat="41.9869314" lon="21.4308515" version="1" timestamp="2016-06-18T12:06:12Z" changeset="40114509" uid="3722155" user="Andreas Kohout">
+		<tag k="amenity" v="bureau_de_change"/>
+	</node>
+	<node id="4274196794" lat="41.9929669" lon="21.441138" version="1" timestamp="2016-06-30T20:24:07Z" changeset="40402252" uid="3722155" user="Andreas Kohout">
+		<tag k="amenity" v="bureau_de_change"/>
+	</node>
+	<node id="4274264489" lat="41.9910228" lon="21.4455539" version="1" timestamp="2016-06-30T20:24:07Z" changeset="40402252" uid="3722155" user="Andreas Kohout">
+		<tag k="amenity" v="bureau_de_change"/>
+	</node>
+	<node id="5017093623" lat="41.9963142" lon="21.4274642" version="2" timestamp="2019-05-11T17:36:29Z" changeset="70143291" uid="361707" user="0xF00F">
+		<tag k="amenity" v="bureau_de_change"/>
+	</node>
+	<node id="5273369221" lat="42.0218845" lon="21.4394224" version="2" timestamp="2020-08-25T12:42:18Z" changeset="89915973" uid="344903" user="Toyota_79">
+		<tag k="addr:housenumber" v="lok 8"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Втора Македонска Бригада"/>
+		<tag k="amenity" v="bureau_de_change"/>
+		<tag k="email" v="mersa63@hotmail.com"/>
+		<tag k="name" v="мерса мобиле"/>
+		<tag k="name:en" v="mersa mobile"/>
+		<tag k="opening_hours" v="Mo-Sa 09:00-21:00; Su 12:00-17:00"/>
+		<tag k="operator" v="Harbin Ametaj"/>
+		<tag k="phone" v="+38922626808"/>
+		<tag k="website" v="http://www.mersamobile.com"/>
+	</node>
+	<node id="5723785794" lat="41.9998074" lon="21.4361306" version="1" timestamp="2018-06-27T17:47:51Z" changeset="60225348" uid="884277" user="Nelson777">
+		<tag k="amenity" v="bureau_de_change"/>
+	</node>
+	<node id="5798860062" lat="41.9392769" lon="21.5160955" version="1" timestamp="2018-07-31T13:18:53Z" changeset="61229809" uid="239981" user="pardus116">
+		<tag k="amenity" v="bureau_de_change"/>
+	</node>
+	<node id="6814246714" lat="42.0024104" lon="21.4390768" version="1" timestamp="2019-09-21T15:32:22Z" changeset="74752372" uid="9047835" user="YunDi88">
+		<tag k="amenity" v="bureau_de_change"/>
+	</node>
+	<node id="6815931387" lat="42.0026617" lon="21.4388933" version="1" timestamp="2019-09-22T17:52:54Z" changeset="74777891" uid="9047835" user="YunDi88">
+		<tag k="amenity" v="bureau_de_change"/>
+		<tag k="name" v="Euro stil"/>
+	</node>
+	<node id="6834305904" lat="41.9956903" lon="21.4275526" version="1" timestamp="2019-09-29T11:13:00Z" changeset="75059344" uid="361707" user="0xF00F">
+		<tag k="amenity" v="bureau_de_change"/>
+	</node>
+	<way id="442935165" version="2" timestamp="2018-06-27T17:45:33Z" changeset="60225294" uid="884277" user="Nelson777">
+		<nd ref="4405850050"/>
+		<nd ref="4405850059"/>
+		<nd ref="4405850066"/>
+		<nd ref="4405850056"/>
+		<nd ref="4405850050"/>
+		<tag k="amenity" v="bureau_de_change"/>
+		<tag k="building" v="yes"/>
+	</way>
+</osm>
