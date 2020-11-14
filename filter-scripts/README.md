@@ -25,3 +25,9 @@ Additional filter parameters can be easily added.
 ### [download-data.sh](https://github.com/gabrieldim/SkopjeGuide/blob/main/filter-scripts/download-data.sh)
 
 This script downloads the latest dataset for the Skopje area and it saves the file in the datasets folder with the current timestamp.
+
+---
+
+### [csv-export.sh](https://github.com/gabrieldim/SkopjeGuide/blob/main/filter-scripts/csv-export.sh)
+
+This script takes the already filtered datasets located in the filtered-datasets folder and converts them into CSV format.
