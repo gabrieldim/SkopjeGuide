@@ -11,7 +11,7 @@ Skopje, as the capital and largest city of our country, is a major attraction an
 This application will be available under the name "Skopje Guide" and in addition to Macedonian will be available in English for foreign tourists. It can be accessed from all web browsers Google Chrome, Mozilla Firefox, Internet Explorer, Safari etc.
 
 
-## Requirements
+## 3.Requirements
 ### 3.1 Functional Requirements
 ##### - The system must display the map of the City of Skopje.
 ##### - The system must be accessible to all web browsers.
