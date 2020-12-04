@@ -1,0 +1,144 @@
+.subscribe_area{
+    position: relative;
+    z-index: 9;
+    
+    .subscribe_iner{
+        padding: 33px 70px 51px;
+        background-color: $btn_bg;
+        position: relative;
+        z-index: 1;
+        @media #{$small_mobile}{
+            padding: 30px 15px;
+            text-align: center;
+        }
+        @media #{$large_mobile}{
+            text-align: center;
+        }
+        @media #{$tab_device}{
+        
+        }
+        @media #{$medium_device}{
+        
+        }
+        &:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/subscribe_overlay.png);
+            z-index: -1;
+        }
+        h2{
+            font-size: 42px;
+            font-weight: 600;
+            color: $white_color;
+            margin-bottom: 0;
+            margin-top: 15px;
+            @media #{$small_mobile}{
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            @media #{$large_mobile}{
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            @media #{$tab_device}{
+                font-size: 30px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            @media #{$medium_device}{
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+        .form-group{
+           text-align: right;
+            width: 100%;
+            @media #{$small_mobile}{
+                text-align: center;
+            }
+            @media #{$large_mobile}{
+                text-align: center;
+            }
+            @media #{$tab_device}{
+                text-align: center;
+            }
+            @media #{$medium_device}{
+                text-align: center;
+            }
+            input{
+                height: 60px;
+                background-color: $white_color;
+                border: 0px solid transparent;
+                border-radius: 50px;
+                padding-left: 27px;
+                width: 300px;
+                float: left;
+                margin-left: 15px;
+                @media #{$small_mobile}{
+                    width: 100%;
+                    padding-left: 15;
+                    margin-left: 0;
+                    height: 50px;
+                }
+                @media #{$large_mobile}{
+                    width: 100%;
+                    padding-left: 15;
+                    margin-left: 0;
+                    height: 50px;
+                }
+                @media #{$tab_device}{
+                    width: 365px;
+                    margin-left: 15px;
+                    margin-right: 5px;
+                }
+                @media #{$medium_device}{
+                    width: 250px;
+                }
+            }
+            ::placeholder{
+                color: #999999;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            
+        }
+        .btn_2{
+            margin-top: 0 !important;
+            padding: 17.5px 47px;
+            float: right;
+            @media #{$small_mobile}{
+                float: none;
+                text-align: center;
+                margin-top: 20px !important;
+            }
+            @media #{$large_mobile}{
+                float: none;
+                text-align: center;
+                margin-top: 20px !important;
+            }
+            @media #{$tab_device}{
+                float: left;
+            }
+            @media #{$medium_device}{
+            
+            }
+            &:hover{
+                background-color: $white_color;
+                color: $btn_bg;
+            }
+        }
+        button{
+            border-width: 0px;
+        }
+    }
+}
+input:focus {
+    outline-offset: 0px;
+}
+.form-control:focus{
+box-shadow: 0 0 0 0rem;
+}

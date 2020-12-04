@@ -1,0 +1,122 @@
+/**************** project_datails css start ****************/
+.project_details{
+    .project_details_content{
+        padding: 40px 0px 0px;
+        h3{
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.406;
+            color: rgb(47, 55, 61);
+            margin-bottom: 20px;
+            @media #{$small_mobile}{
+                font-size: 20px;
+            }
+            @media #{$large_mobile}{
+                font-size: 25px;
+            }
+            @media #{$tab_device}{
+                font-size: 28px;
+            }
+            @media #{$medium_device}{
+                font-size: 30px;
+            }
+        }
+        p{
+            color: $font_1;
+            font-weight: 400;
+        }
+        h4{
+            color: $menu_color;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 25px 0px 25px;
+            @media #{$small_mobile}{
+                margin: 15px 0px 15px;
+            }
+            @media #{$large_mobile}{
+                margin: 15px 0px 15px;
+            }
+            @media #{$tab_device}{
+                margin: 15px 0px 15px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+    }
+    .project_details_widget{
+        padding: 40px 0px 0px;
+        @media #{$small_mobile}{
+            padding: 20px 0px 0px;
+        }
+        @media #{$large_mobile}{
+            padding: 20px 0px 0px;
+        }
+        @media #{$tab_device}{
+            padding: 20px 0px 0px;
+        }
+        @media #{$medium_device}{
+            padding: 30px 0px 0px;
+        }
+        .single_project_details_widget{
+            position: relative;
+            padding-left: 36px;
+            margin-bottom: 40px;
+            @media #{$small_mobile}{
+                margin-bottom: 20px;
+            }
+            @media #{$large_mobile}{
+                margin-bottom: 20px;
+            }
+            @media #{$tab_device}{
+                margin-bottom: 20px;
+            }
+            @media #{$medium_device}{
+                margin-bottom: 20px;
+            }
+            span{
+                color: $icon_color;
+                font-size: 20px;
+                position: absolute;
+                left: 0;
+                top: 5px;
+            }
+            h5{
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 1px;
+            }
+            h6{
+                font-weight: 500;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+            p{
+                font-weight: 300;
+                color: $font_7;
+                
+            }
+        }
+    }
+    .single_project_details_text{
+        margin-bottom: 50px;
+        @media #{$tab}{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        @media #{$medium_device}{
+            width: 50%;
+            float: left;
+            margin-top: 50px;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 17px;
+        }
+        p{
+            color: $font_7;
+        }
+    }
+}

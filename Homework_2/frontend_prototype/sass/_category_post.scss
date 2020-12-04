@@ -1,0 +1,21 @@
+/******************** Category Post*************************/
+.catagory_post{
+    padding: 130px 0px 70px;
+    @media #{$small_mobile}{
+        padding: 0px 0px 50px;
+        .category_btn{
+            left: 0;
+        }
+    }
+    @media #{$large_mobile}{
+        padding: 0px 0px 70px;
+    }
+    @media #{$tab_device}{
+        padding: 0px 0px;
+    
+    }
+    @media #{$medium_device}{
+        padding: 0px 0px 45px;
+    
+    }
+}

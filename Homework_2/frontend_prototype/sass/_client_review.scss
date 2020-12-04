@@ -1,0 +1,51 @@
+/******** client review part css *********/
+.client_review{
+    background-color: $heading_color;
+    .section_tittle{
+        h2{
+            color: $white_color;
+        }
+    }
+    .single_review_slider{
+        background-color: #0e477d;
+        padding: 30px;
+        p{
+            display: inline-block;
+            color: $white_color;
+            margin: 26px 0 32px;
+        }
+        h5{
+            font-weight: 18px;
+            color: $white_color;
+        }
+        .place_review{
+            display: inline-block;
+            a{
+
+            }
+        }
+    }
+    .owl-nav{
+        position: absolute;
+        top: -120px;
+        right: 0;
+        @media #{$medium_device}{
+            top: -80px;
+        }
+        button{
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            display: inline-block;
+            background-color: #2493e0 !important;
+            color: $white_color !important;
+            i{
+                font-weight: 700;
+            }
+        }
+        .owl-prev{
+            margin-right: 10px;
+        }
+    }
+}

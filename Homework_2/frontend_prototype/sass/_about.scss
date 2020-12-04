@@ -1,0 +1,69 @@
+/**************** about css start ****************/
+.about_us{
+    position: relative;
+    z-index: 1;
+    .about_img{
+        img{
+            width: 100%;
+        }
+    }
+    .about_text{ 
+        @media #{$tab}{
+            margin-top: 30px;
+        }
+
+        @media #{$medium_device}{
+            margin-top: 30px;
+        }
+        h5{
+            margin-bottom: 12px;
+            color: $base_color;
+            font-size: 16px;    
+            font-weight: 300;       
+        }
+        h2{
+            line-height: 56px;
+            margin-bottom: 21px;
+            font-weight: 700;
+            font-size: 46px;
+            @media #{$tab}{
+                margin-bottom: 10px;
+                font-size: 30px;
+                line-height: 35px;
+            }
+
+            @media #{$medium_device}{
+                margin-bottom: 20px;
+                font-size: 40px;
+                line-height: 45px;
+            } 
+        }
+        p{
+            margin-top: 13px;
+            font-weight: 300;
+        }
+    }
+}
+.our_service_part{
+    background-image: url(../img/service_bg_2.png);
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-size: 29% 86%;
+    @media #{$small_mobile}{
+        padding-top: 0px;
+        background-position: top left; 
+        background-size: 100% 35%;
+    }
+    @media #{$large_mobile}{
+        padding-top: 0px;
+        background-position: top left;
+        background-size: 95% 55%;
+    }
+    @media #{$tab_device}{
+        background-position: left;
+        background-size: 48% 70%;
+    }
+    @media #{$medium_device}{
+    
+    }
+}

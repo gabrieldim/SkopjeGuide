@@ -1,0 +1,22 @@
+/******** best services css *********/
+.best_services{
+    .single_ihotel_list{
+        @media #{$tab}{
+            margin-bottom: 25px;
+        }
+        img{
+            margin-bottom: 32px;
+            @media #{$tab}{
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+        h3{
+            a{
+                font-size: 24px;
+                color: $heading_color;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

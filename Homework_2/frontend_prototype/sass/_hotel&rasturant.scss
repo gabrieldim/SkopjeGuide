@@ -1,0 +1,99 @@
+.hotel_list{
+    .single_ihotel_list{
+        position: relative;
+        @include transform_time(1s);
+        border-bottom: 1px solid #ced8e3;
+        img{
+            width: 100%;
+        }
+        .hotel_text_iner{
+            padding: 33px 0;
+            @media #{$tab}{
+                padding: 15px 0 45px;
+            }
+            
+            h3{
+                font-size: 24px;
+                margin-bottom: 21px;
+                a{
+                    color: $heading_color;
+                }
+                @media #{$tab}{
+                    margin-bottom: 10px;
+                }
+            }
+            p{
+                padding: 10px 0;
+            }
+            h5{
+                height: 5px;
+                span{
+                    color: $base_color;
+                }
+            }
+            
+        }
+        
+        .hover_text{
+            position: absolute;
+            right: 10%;
+            bottom: 49%;
+            z-index: 9;
+            @include transform_time(.5s);
+           .share_icon{
+               @include transform_time(.5s);
+               transform: scaleX(1);
+               i{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                color: #fff !important;
+                display: inline-block;
+                font-size: 20px;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 50%;
+               }
+           } 
+           .hotel_social_icon{
+               @include transform_time(.5s);
+               transform: scaleY(0);
+               ul{
+                   li{
+                       text-align: center;
+                       i{
+                        border-radius: 50%;
+                        background-color: rgba(255, 122, 75, .7);
+                        top: 3771px;
+                        width: 40px;
+                        height: 40px;
+                        display: inline-block;
+                        line-height: 40px;
+                        color: $white_color;
+                        margin: 5px 0;
+                        @include transform_time(.5s);
+                       }
+                   }
+               }
+           }
+           &:hover{
+                .hotel_social_icon{
+                    transform: scaleY(1);
+                }
+                .share_icon{
+                    transform: scaleX(0);
+                }
+            }
+        }
+    }
+}
+.single_page_hotel_list .single_ihotel_list .hover_text {
+    position: absolute;
+    right: 10%;
+    bottom: 56%;
+    z-index: 9;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+

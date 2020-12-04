@@ -1,0 +1,81 @@
+/*********** booking css start *************/
+.booking_part{
+    margin-top: -80px;
+    z-index: 9;
+    position: relative;
+    
+    .booking_menu{
+        background-color: $white_color;
+        padding: 0 35px;
+        @media #{$small_mobile}{
+            padding: 0 20px;
+        }
+        .nav-tabs .nav-item .nav-link, .nav-tabs .nav-link {
+            color: $heading_color;
+            border-color: transparent;
+            border-bottom: 3px solid transparent;
+            text-transform: capitalize;
+            padding: 28.5px 20px;
+        }
+        .nav-tabs {
+            border-bottom: 0px solid transparent;
+        }
+    }
+    .booking_content{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 10px 40px 0px rgba(221, 221, 221, 0.3);
+        padding: 40px;
+    }
+    .form-row{
+        display: flex;
+        justify-content: space-between;
+        .form_colum{
+            width: 20%;
+            
+            @media #{$tab}{
+                width: 48%;
+                margin-bottom: 15px;
+            }
+            @media #{$small_mobile}{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .nc_select, .gj-datepicker{
+                width: 100%;
+                border-color: #2493e0;
+                border-radius: 0;
+                color: #2493e0;
+                height: 50px;
+                display: flex;
+                align-items: center;
+            }
+            .nice-select:after {
+                border-bottom: 2px solid #2493e0;
+                border-right: 2px solid #2493e0;
+                content: '';
+                display: block;
+                height: 8px;
+                width: 8px;
+                right: 18px;
+            }
+            .gj-textbox-md {
+                border: 1px solid #2493e0;
+                padding: 16px;
+                color: #2493e0;
+                font-size: 14px;
+            }
+            .gj-datepicker-md [role=right-icon] {
+                position: absolute;
+                right: 12px;
+                top: 13px;
+                font-size: 24px;
+            }
+            ::placeholder{
+                color: #2493e0;
+            }
+        }
+    }
+    .nav-link.active {
+        border-bottom: 3px solid #2493e0 !important;
+    }
+}

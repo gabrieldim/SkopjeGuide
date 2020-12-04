@@ -1,0 +1,118 @@
+/**************** banner part css start ****************/
+.banner_part{
+    height: 880px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/banner_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    @media #{$small_mobile}{
+        height: 650px;
+        background-color: #f0eed4;
+    }
+    @media #{$large_mobile}{
+        height: 650px;
+        background-color: #f0eed4;
+    }
+    @media #{$tab_device}{
+        height: 700px;
+        background-color: #f0eed4;
+    }
+    @media #{$medium_device}{
+        background-size: cover;
+        height: 650px;
+    }
+    
+    .banner_text{
+        display: table;
+        width: 100%;
+        height: 880px;
+        .banner_text_iner{
+            display: table-cell;
+            vertical-align: middle;
+            
+        }
+        @media #{$small_mobile}{
+            text-align: center;
+            padding-top: 0px;
+            height: 650px;
+        }
+        @media #{$large_mobile}{
+            text-align: center;
+            padding-top: 0px;
+            height: 650px;
+        }
+        @media #{$tab_device}{
+            text-align: center;
+            padding-top: 0px;
+            height: 700px;
+        }
+        @media #{$medium_device}{
+            height: 650px;
+        }
+        p{
+            font-size: 24px;
+            color: $white_color;
+        }
+        h1{
+            font-size: 120px;
+            line-height: 1;
+            text-transform: capitalize;
+            color: $white_color;
+            font-weight: 900;
+            margin-bottom: 22px;
+            @media #{$small_mobile}{
+                font-size: 30px;
+                margin-bottom: 15px;
+                line-height: 1.3;
+            }
+            @media #{$large_mobile}{
+                font-size: 40px;
+                margin-bottom: 15px;
+                line-height: 1.3;
+            }
+            @media #{$tab_device}{
+                font-size: 40px;
+                margin-bottom: 15px;
+                line-height: 1.3;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+                margin-bottom: 15px;
+                line-height: 1.4;
+            }
+            span{
+                color: $btn_bg;
+            }
+        }
+        
+        h3{
+            font-size: 48px;
+            font-weight: 300;
+            color: $white_color;
+            @media #{$small_mobile}{
+                font-size: 28px;
+            }
+            @media #{$large_mobile}{
+                font-size: 28px;
+            }
+            @media #{$tab_device}{
+            
+            }
+            
+        }
+        .btn_1{
+            margin-top: 60px;
+            background-color: #2493e0;
+            padding: 23px 79px;
+            &:hover{
+                color: $white_color;
+                background-color: $btn_bg;
+            }
+        }
+    }
+}
+  
+/**************** hero part css end ****************/

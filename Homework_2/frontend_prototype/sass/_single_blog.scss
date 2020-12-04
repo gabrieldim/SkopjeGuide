@@ -1,0 +1,53 @@
+
+.single_blog_post{
+    .desc{
+        a{
+            font-size: 16px;
+            color: #232b2b !important;
+        }
+    }
+    .single_blog{
+        .single_appartment_content{
+            padding: 38px 38px 23px;
+            border: 0px solid $border_color;
+            box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+            p{
+                font-size: 12px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                a{
+                    color: $btn_bg;
+                }
+            }
+            h4{
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.481;
+                margin-bottom: 16px;
+            }
+            h5{
+                font-size: 15px;
+                color: $font_4;
+                font-weight: 400;
+            }
+            .list-unstyled{
+                margin-top: 33px;
+                li{
+                    display: inline;
+                    margin-right: 17px;
+                    color: $font_5;
+                    a{
+                        margin-right: 8px;
+                        color: $font_5;
+                    }
+                }
+            }
+        }
+    }
+}
+@media #{$small_mobile}{
+
+}
+@media #{$large_mobile}{
+
+}

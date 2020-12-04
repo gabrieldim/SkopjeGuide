@@ -1,0 +1,57 @@
+.our_industries{
+    padding: 130px 0px 55px;
+    @media #{$tab}{
+        padding: 70px 0px 55px;
+    } 
+    img{
+        width: 100%;
+    }
+    .single_industries{
+        @media #{$tab}{
+            margin-bottom: 15px;
+        }        
+        h3{
+            margin-top: 33px;
+            font-size: 20px;
+            position: relative;
+            font-weight: 600;
+            text-transform: uppercase;
+            @media #{$tab}{
+                margin-top: 20px;
+            } 
+            &:after{
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: -16px;
+                width: 50px;
+                height: 1px;
+                background-color: $btn_bg;
+            }
+            a{
+                color: #191d34;
+                @include transform_time(1s);
+                &:hover{
+                    color: $btn_bg;
+                }
+            }
+        }
+        p{
+            color: $font_7;
+            margin-top: 27px;
+        }
+    }
+    @media #{$tab}{
+        .single_industries{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+.single_page_hotel_list{
+    p{
+        line-height: 20px;
+    }
+}

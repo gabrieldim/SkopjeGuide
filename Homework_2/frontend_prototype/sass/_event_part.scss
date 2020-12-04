@@ -1,0 +1,71 @@
+/***** event part css******/
+.event_part{
+   background-image: url(../img/event_bg.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   .event_slider_content{
+       background-color: #fff;
+       padding: 50px;
+       @media #{$tab}{
+           padding: 20px;
+       }
+       h5{
+           color: $base_color;
+           margin-bottom: 18px;
+       }
+       h2{
+           font-weight: 700;
+           margin-bottom: 25px;
+           @media #{$tab}{
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+       }
+       p{
+           margin-bottom: 15px;
+           color: #848484;
+           span{
+               color: $heading_color;
+           }
+       }
+   }
+   .rating{
+       margin-bottom: 45px;
+       span{
+           color: #848484;
+           font-family: $font_stack_1;
+           font-size: 16px;
+       }
+   }
+   .owl-nav{
+       button{
+           width: 75px;
+           height: 75px;
+           line-height: 75px;
+           text-align: center;
+           border-radius: 50%;
+           display: inline-block;
+           background-color: rgba($color: #fff, $alpha: .5) !important;
+           position: absolute;
+           left: 0;
+           top: 45%;
+           z-index: 99;
+           i{
+               color: $base_color;
+               font-weight: 700;
+               font-size: 20px;
+           }
+       }
+       .owl-next{
+           left: auto;
+           right: -10%;
+           @media #{$medium_device}{
+               right: -5%;
+           }
+           @media #{$big_screen}{
+               right: -5%;
+           }
+       }
+   }
+}

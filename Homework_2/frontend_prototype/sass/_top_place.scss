@@ -1,0 +1,91 @@
+/*********** top place *************/
+.top_place{
+    .single_place{
+        position: relative;
+        z-index: 2;
+        margin-bottom: 30px;
+        &:after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0c3e72;
+            opacity: 0;
+            z-index: 1;
+            @include transform_time(.5s);
+        }
+        .hover_Text{
+            padding: 40px;
+            position: absolute;
+            bottom: -20px;
+            z-index: 5;
+            opacity: 0;
+            visibility: hidden;
+            width: 100%;
+            @media #{$tab}{
+                padding: 15px;
+            }
+            @include transform_time(1s);
+            .place_btn{
+                display: inline-block;
+                padding: 10px 25px;
+                color: $white_color;
+                background-color: $btn_bg;
+                text-transform: capitalize;
+                margin-bottom: 14px;
+            }
+            h3{
+                font-size: 30px;
+                line-height: 36px;
+                color: $white_color;
+                margin-bottom: 0;
+                @media #{$tab}{
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+            p{
+                color: $white_color;
+            }
+            .place_review{
+                margin-top: 15px;
+                a{
+                    color: $btn_bg;
+                }
+                span{
+                    color: $white_color;
+                }
+            }
+        }
+        .details_icon{
+            float: right;
+            i{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                color: #fff !important;
+                display: inline-block;
+                font-size: 20px;
+                text-align: center;
+                background-color: rgba(255, 255, 255, .5);
+                border-radius: 50%;
+            }
+        }
+        &:hover{
+            .hover_Text{
+                opacity: 1;
+                visibility: visible;
+                bottom: 0
+            }
+            &:after{
+                opacity: .75;
+            }
+        }
+    }
+    .btn_1{
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}

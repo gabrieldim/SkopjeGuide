@@ -1,0 +1,208 @@
+/**************** learn_about css start ****************/
+.portfolio_part {
+  margin-bottom: -20px;
+  .card-columns{
+    overflow: hidden;
+  }
+  p {
+    color: $white_color;
+    margin-bottom: 25px;
+  }
+
+  .card-title {
+    font-size: 30px;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 700;
+    line-height: 1.833;
+    margin-bottom: 20px;
+  }
+
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+
+    @media #{$small_mobile} {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+
+    @media #{$large_mobile} {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+
+    @media #{$tab_device} {}
+
+    @media #{$medium_device} {}
+
+    .blockquote {
+      padding: 0px 10px 54px 0px;
+
+      @media #{$small_mobile} {
+        padding: 0px 10px 10px 0px;
+      }
+
+      @media #{$large_mobile} {
+        padding: 0px 10px 10px 0px;
+      }
+
+      @media #{$tab_device} {
+        padding: 0px 10px 10px 0px;
+      }
+
+      @media #{$medium_device} {
+        padding: 0px 10px 0px 0px;
+      }
+
+      h2 {
+        font-size: 45px;
+        margin-bottom: 13px;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: -16px;
+          width: 50px;
+          height: 1px;
+          background-color: $btn_bg;
+        }
+
+        @media #{$small_mobile} {
+          font-size: 30px;
+          line-height: 1.2;
+        }
+
+        @media #{$large_mobile} {
+          font-size: 30px;
+          line-height: 1.2;
+        }
+
+        @media #{$tab_device} {
+          font-size: 30px;
+          line-height: 1.2;
+        }
+
+        @media #{$medium_device} {
+          font-size: 36px;
+          line-height: 1.2;
+        }
+      }
+
+      p {
+        margin-bottom: 8px;
+        color: $white_color !important;
+
+      }
+    }
+
+    .portfolio_btn {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $btn_bg;
+      img {
+        width: 20px;
+        height: 5px;
+      }
+    }
+    .overlay {
+      position: relative;
+      z-index: 1;
+      @include transform_time(.5s);
+      &:after{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 90%;
+        height: 100%;
+        background: url(../img/portfolio_overlay.png);
+        content: "";
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+        opacity: 0;
+        @include transform_time(1s);
+      }
+    }
+    .card {
+      border: 0px solid transparent;
+      position: relative;
+      margin-bottom: 20px;
+      
+      .card-body {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        padding: 40px 40px;
+        opacity: 0;
+        visibility: hidden;
+        @include transform_time(.5s);
+
+        &:hover {
+          h5 {
+            color: $btn_bg;
+          }
+        }
+
+        h5 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 4px;
+          @include transform_time(.5s);
+        }
+      }
+
+      .card-img-top {
+        border-top-left-radius: calc(0px);
+        border-top-right-radius: calc(0px);
+      }
+
+      &:hover {
+        .card-body {
+          opacity: 1;
+          visibility: visible;
+          bottom: 0px;
+          top: 20px;
+        }
+        .overlay{
+          &:after{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.see_more_project {
+  background-color: $heading_color;
+  height: 225px;
+text-align: center;
+  .btn_1 {
+    margin-top: 15%;
+    @media #{$small_mobile}{
+      margin-top: 30%;
+    }
+    @media #{$large_mobile}{
+    
+    }
+    @media #{$tab_device}{
+    
+    }
+    @media #{$medium_device}{
+    
+    }
+  }
+}

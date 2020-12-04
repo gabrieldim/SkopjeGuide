@@ -1,0 +1,186 @@
+.faq_part {
+    margin-top: 94px;
+    position: relative;
+    z-index: 1;
+    height: 720px;
+
+    @media #{$tab} {
+        height: auto;
+        margin-top: 0;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: 80%;
+        top: 10%;
+        right: 0;
+        background-image: url(../img/faq_bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+
+        @media #{$tab} {
+            display: none;
+        }
+
+    }
+
+    .col-lg-6 {
+        padding: 0;
+    }
+
+    .faq_img {
+        background-image: url(../img/faq.png);
+        width: 100%;
+        height: 720px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media #{$tab} {
+            height: 250px;
+        }
+        @media #{$tab_device}{
+            height: 450px;
+        }
+        
+    }
+
+    .faq_content {
+        padding: 115px 0 115px 50px;
+
+        @media #{$tab} {
+            padding: 70px 0 70px 0px;
+        }
+        @media #{$medium_device}{
+            padding: 100px 0 100px 50px;
+        }
+        @media #{$big_screen}{
+            padding: 115px 0 1150px 50px;
+        }
+
+
+
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 50px;
+            @media #{$tab} {
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+            @media #{$medium_device}{
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+            @media #{$big_screen}{
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .accordion-item {
+            background-color: transparent;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease-in 0.3s;
+            border-bottom: 1px solid #e1e1e1;
+
+            &:last-child {
+                border-bottom: 0px solid transparent;
+            }
+
+            h2 {
+                font-size: 20px;
+                position: relative;
+                font-weight: 400;
+                @media #{$tab} {
+                    padding-right: 25px;
+                }
+                @media #{$medium_device}{
+                    padding-right: 25px;
+                }
+                @media #{$big_screen}{
+                    padding-right: 25px;
+                }
+                &:before {
+                    font-family: 'themify';
+                    position: absolute;
+                }
+            }
+        }
+
+        .accordion-item.active {
+            transition: background-color 0.2s ease-in 0s;
+        }
+
+        .accordion-item.active .accordion-body {
+            max-height: 900px;
+            transition: max-height 0.3s ease-in 0s, padding 0.2s ease-in 0s;
+        }
+
+        .accordion-item.active .accordion-body p {
+            opacity: 1;
+            transition: opacity 0.2s ease-in 0.2s;
+        }
+
+        .accordion-header {
+            color: white;
+            border-radius: 5px;
+            padding: 25px 15px 25px 0;
+            cursor: pointer;
+            transition: background-color 0.2s ease-out 0.3s, color 0.2s ease-out 0s;
+            @media #{$medium_device}{
+                padding: 10px 10px 10px 0;
+            }
+        }
+
+        .accordion-item .accordion-header h2:before {
+            right: 0;
+            top: calc(50% - 1px);
+            border-radius: 50%;
+            background-color: rgb(25, 29, 52);
+            width: 28px;
+            height: 28px;
+            content: "\e61a";
+            color: $white_color;
+            line-height: 28px;
+            text-align: center;
+            font-size: 14px;
+            top: 0;
+
+        }
+
+        .active .accordion-header h2:before {
+            right: 0;
+            top: calc(50% - 1px);
+            border-radius: 50%;
+            background-color: $btn_bg;
+            width: 28px;
+            height: 28px;
+            content: "\e622";
+            color: $white_color;
+            line-height: 28px;
+            text-align: center;
+            font-size: 14px;
+            top: 0;
+
+        }
+
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out 0s, padding 0.1s ease-out 0.2s;
+
+            p {
+                color: $font_7;
+                transition: opacity 0.2s ease-in 0s;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}

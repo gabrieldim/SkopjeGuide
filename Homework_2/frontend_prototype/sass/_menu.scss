@@ -1,0 +1,149 @@
+/**************menu part start*****************/
+.main_menu {
+
+	.navbar-brand {
+		padding-top: 0rem;
+
+		img {
+			@media #{$small_mobile} {
+				max-width: 150px;
+			}
+
+			@media #{$large_mobile} {
+				max-width: 200px;
+			}
+
+			@media #{$tab_device} {
+				max-width: 200px;
+			}
+
+			@media #{$medium_device} {
+				max-width: 200px;
+			}
+		}
+	}
+
+	.navbar {
+		padding: 0px;
+	}
+
+	.main-menu-item {
+
+		ul {
+			li .nav-link {
+				color: $menu_color;
+				font-size: 16px;
+				padding: 38px 22px;
+				font-family: $font_stack_1;
+				text-transform: capitalize;
+				&:hover{
+					color: $btn_bg;
+				}
+				@media #{$small_mobile}{
+
+				}
+				@media #{$medium_device} {
+					padding: 35px 16px;
+				}
+			}
+		}
+	}
+}
+
+.menu_fixed {
+	position: fixed;
+	z-index: 9999 !important;
+	width: 100%;
+	background-color: $white-color;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+	top: 0;
+	.navbar-brand{
+		img{
+			max-width: 150px;
+		}
+	}
+	.main-menu-item ul li .nav-link{
+		padding: 25px 25px;
+	}
+	span {
+		color: #000 !important;
+	}
+}
+
+.dropdown-menu {}
+
+.dropdown:hover {
+	.dropdown-menu {
+		display: block;
+	}
+}
+
+.dropdown {
+	.dropdown-menu {
+		transition: all 0.5s;
+		overflow: hidden;
+		transform-origin: top center;
+		transform: scale(1, 0);
+		display: block;
+		margin-top: 0px;
+		border: 0px solid rgba(0, 0, 0, .15) !important;
+		background-color: #fafafa;
+	}
+	.dropdown-item{
+		text-transform: capitalize;
+	}
+
+	&:hover {
+		.dropdown-menu {
+			transform: scale(1);
+		}
+	}
+}
+
+@media #{$tab} {
+	.main_menu_iner {
+		padding: 20px 0px;
+	}
+
+	.navbar-light .navbar-toggler {
+		border-color: transparent;
+	}
+
+	.navbar-collapse {
+		z-index: 9999 !important;
+		position: absolute;
+		left: 0;
+		top: 65px;
+		width: 100%;
+		background-color: $white-color;
+		text-align: center !important;
+
+	}
+
+	.dropdown {
+		.dropdown-menu {
+			transform: scale(1, 0);
+			display: none;
+		}
+
+		&:hover {
+			.dropdown-menu {
+				transform: scale(1);
+				display: block;
+			}
+		}
+	}
+
+	.main_menu .main-menu-item {
+		text-align: left !important;
+
+		.nav-item {
+			padding: 10px 15px !important;
+
+			a {
+				padding: 0 !important;
+			}
+		}
+	}
+
+}

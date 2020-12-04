@@ -1,0 +1,152 @@
+/************** our professional part****************/
+.our_Professional {
+    background-color: $heading_color;
+    position: relative;
+    z-index: 1;
+    @media #{$tab}{
+        padding: 70px 0 55px;
+    }
+    @media #{$medium_device}{
+        padding: 80px 0 65px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 184px;
+        background-color: $white_color;
+        z-index: -1;
+        @media #{$tab}{
+            bottom: -1px;
+        }
+    }
+
+    .section_tittle {
+        h2 {
+            color: $white_color;
+        }
+    }
+
+    .single_industries_text {
+        padding: 33px 15px 40px;
+        background-color: $white_color;
+        text-align: center;
+        border: 1px solid #eaebed;
+        border-top: 0px solid transparent;
+        @include transform_time(1s);
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            @include transform_time(1s);
+        }
+
+        p {
+            color: $font_7;
+            margin-bottom: 20px;
+            @include transform_time(1s);
+        }
+
+        .social_icon {
+            a {
+                background-color: #f7f7f7;
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                border-radius: 50%;
+                line-height: 30px;
+                margin: 0 5px;
+                color: $font_7;
+                @include transform_time(1s);
+
+                &:hover {
+                    background-color: $heading_color;
+                    color: $white_color;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: $btn_bg;
+            border: 1px solid $btn_bg;
+            border-top: 0px solid transparent;
+
+            p {
+                color: $white_color;
+            }
+
+            h3 {
+                color: $white_color;
+            }
+
+        }
+    }
+
+    @media #{$tab} {
+        .single_industries {
+            margin-bottom: 15px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+.single_page_Professional{
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 324px;
+        background-color: $white_color;
+        z-index: -1;
+        @media #{$tab}{
+            bottom: -1px;
+            height: 256px;
+        }
+    }
+}
+.team_single_Professional{
+    padding: 130px 0 100px;
+    background-color: $white_color;
+    @media #{$small_mobile}{
+        padding: 70px 0 55px;
+    }
+    @media #{$large_mobile}{
+        padding: 70px 0 55px;
+    } 
+    @media #{$tab_device}{
+        padding: 70px 0 55px;
+    }
+    @media #{$medium_device}{
+        padding: 80px 0 65px;
+    }
+    .section_tittle{
+        h2{
+            color: $heading_color;
+        }
+    }
+    .single_industries{
+        margin-bottom: 30px;
+        @media #{$small_mobile}{
+            margin-bottom: 15px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 15px;
+        } 
+        @media #{$tab_device}{
+            margin-bottom: 15px;
+        } 
+        @media #{$medium_device}{
+            margin-bottom: 15px;
+        }
+    }
+}

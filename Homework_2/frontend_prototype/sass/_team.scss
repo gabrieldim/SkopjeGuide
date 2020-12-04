@@ -1,0 +1,55 @@
+/**************** team_part css start ****************/
+.single_team_member{
+    margin-bottom: 10px;
+    .card-body {
+        padding: 30px 0px 30px 0px;
+    }
+    
+    .card {
+        border: 0px solid;
+    }
+    .card-title{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .blog_item_date {
+        position: absolute;
+        background-color: #ff8b23;
+        bottom: 99px;
+        left: 11px;
+        height: 55px;
+        width: 55px;
+        text-align: center;
+        line-height: 55px;
+        padding-top: 15px;
+        h3{
+            font-size: 24px;
+            font-family: $font_stack_1;
+            color: $white_color;
+            font-weight: 700;
+        }
+    }
+    
+    .single_team_member {
+        position: relative;
+    }
+    
+    .header_social_icon 
+     ul li {
+        display: inline-block;
+        margin-left: 8px;
+    }
+    
+    .header_social_icon ul li a {
+        color: #7a7575;
+    }
+    .tean_content{
+        display: inline-block;
+        float: left;
+    }
+    .tean_right_content{
+        float: right;
+        padding-top: 20px;
+    }
+}

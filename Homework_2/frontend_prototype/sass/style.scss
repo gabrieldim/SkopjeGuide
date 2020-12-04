@@ -1,0 +1,40 @@
+// variable scss
+@import "variables";
+
+// mixin scss
+@import "mixins";
+@import "extends";
+// default scss
+@import "common";
+
+// button scss
+@import "button";
+
+@import "blog";
+@import "single_blog";
+// body scss
+@import "sub_menu";
+@import "menu";
+@import "banner";
+@import "booking";
+@import "about";
+@import "top_place";
+@import "event_part";
+@import "tour_details_content";
+@import "hotel&rasturant";
+@import "hotel_list"; 
+@import "client_review";
+@import "best_services";
+@import "our_gallery";
+@import "copyright_part";
+@import "team";
+@import "contact";
+
+// breadcrumb scss
+@import "breadcrumb";
+
+
+@import "footer";
+@import "elements";
+
+

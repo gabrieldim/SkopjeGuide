@@ -1,0 +1,104 @@
+/**************** service_part css start ****************/
+.service_part {
+   @media #{$small_mobile}{
+      padding: 70px 0px 55px;
+   }
+   @media #{$large_mobile}{
+      padding: 70px 0px 55px;
+   }
+   @media #{$tab_device}{
+      padding: 70px 0px 55px;
+   }
+   @media #{$medium_device}{
+   
+   }
+   .single_service_part {
+      text-align: center;
+      padding: 38px 20px 43px;
+      border: 1px solid $border;
+      @include transform_time(1s);
+      @media #{$small_mobile}{
+         margin-bottom: 15px;
+      }
+      @media #{$large_mobile}{
+         margin-bottom: 15px;
+         padding: 25px 10px 25px;
+      }
+      @media #{$tab_device}{
+         margin-bottom: 15px;
+      }
+      @media #{$medium_device}{
+      
+      }
+      i{
+         font-size: 42px;
+         color: $btn_bg;
+         @include transform_time(1s);
+      }
+      h3 {
+         font-size: 20px;
+         font-weight: 600;
+         margin-top: 63px;
+         margin-bottom: 28px;
+         @include transform_time(1s);
+         text-transform: uppercase;
+         @media #{$large_mobile}{
+            margin-top: 20px;
+            margin-bottom: 10px;
+         }
+         @media #{$tab_device}{
+            margin-top: 20px;
+            margin-bottom: 10px;
+         }
+         @media #{$medium_device}{
+            font-size: 18px;
+            margin-bottom: 15px;
+         }
+         
+      }
+      p{
+         font-weight: 300;
+         line-height: 1.875;
+         color: $font_7;
+         @include transform_time(1s);
+      }
+      .line{
+         position: relative;
+         z-index: 1;
+         &:after{
+            position: absolute;
+            content: "";
+            left: -50px;
+            top: 59px;
+            background-color: #fe5c24;
+            width: 60px;
+            height: 2px;
+            @include transform_time(1s);
+            @media #{$large_mobile}{
+               top: 35px;
+            }
+            @media #{$tab_device}{
+               top: 35px;
+            }
+            
+         }
+      }
+      &:hover{
+         background-color: $btn_bg;
+         i{
+            color: $white_color;
+         }
+         h3 {
+            color: $white_color;
+         }
+         p{
+            color: $white_color;
+         }
+         .line{
+            &:after{
+               background-color: $white_color;
+            }
+         }
+      }
+   }
+}
