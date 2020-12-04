@@ -1,0 +1,9 @@
+#slika1{
+    margin: auto;
+    display: block;
+}
+#blokovi{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
