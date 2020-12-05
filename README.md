@@ -32,5 +32,5 @@ This application will be available under the name "Skopje Guide" and in addition
 * The system should be restored no later than 10 minutes if there’s an error.
 
 
-
+===> University project 2020/2021 <===
 
