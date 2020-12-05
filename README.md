@@ -31,6 +31,3 @@ This application will be available under the name "Skopje Guide" and in addition
 * The system should have a copy of the data at another location.
 * The system should be restored no later than 10 minutes if there’s an error.
 
-
-===> University project 2020/2021 <===
-
