@@ -2,3 +2,4 @@
 - Frontend prototype
 - Architecture styles
 - Architecture view
+- Mock up
