@@ -6,15 +6,6 @@ import Places from './components/Places';
 function App() {
   return (
       <Router>
-
-      <nav>
-      <li><Link to={'/'}>Home</Link></li>
-      <li><Link to={'/places'}>Places</Link></li>
-      <li><Link to={'/about'}>About</Link></li>
-
-      </nav>
-
-
         <Switch>
           <Route exact path={'/'} component={Home}></Route>
           <Route exact path={'/about'} component={About}></Route>
