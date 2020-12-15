@@ -1,10 +1,26 @@
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Places from './components/Places';
 
 function App() {
   return (
-    <div>
-      <h1>Skopje Guide</h1>
-    <h2>test</h2>
-    </div>
+      <Router>
+
+      <nav>
+      <li><Link to={'/'}>Home</Link></li>
+      <li><Link to={'/places'}>Places</Link></li>
+      <li><Link to={'/about'}>About</Link></li>
+
+      </nav>
+
+
+        <Switch>
+          <Route exact path={'/'} component={Home}></Route>
+          <Route exact path={'/about'} component={About}></Route>
+          <Route exact path={'/places'} component={Places}></Route>
+        </Switch>
+      </Router>
   );
 }
 
