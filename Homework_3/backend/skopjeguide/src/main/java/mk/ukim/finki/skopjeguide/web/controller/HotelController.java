@@ -16,7 +16,6 @@ public class HotelController {
 
     @GetMapping(value = "{hotelName}")
     public ResponseEntity searchByName() {
-
         return ResponseEntity.ok("Search by name");
     }
 }
