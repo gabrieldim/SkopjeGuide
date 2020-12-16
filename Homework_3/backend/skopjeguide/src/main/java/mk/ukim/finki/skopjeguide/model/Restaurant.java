@@ -1,11 +1,8 @@
 package mk.ukim.finki.skopjeguide.model;
 
-
-
 import javax.persistence.*;
 
 @Entity
-@Table(name = "restaurants")
 public class Restaurant {
 
     @Id
@@ -13,6 +10,8 @@ public class Restaurant {
     private double lon;
     private double lat;
     private String name;
+    private String website;
+    private String phone;
 
     public Restaurant() {
     }
@@ -47,5 +46,21 @@ public class Restaurant {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }
