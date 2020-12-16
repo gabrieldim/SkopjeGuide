@@ -5,13 +5,13 @@ import Places from './components/Places';
 
 function App() {
   return (
-      <Router>
-        <Switch>
-          <Route exact path={'/'} component={Home}></Route>
-          <Route exact path={'/about'} component={About}></Route>
-          <Route exact path={'/places'} component={Places}></Route>
-        </Switch>
-      </Router>
+    <Router>
+      <Switch>
+        <Route exact path={"/"} component={Home}></Route>
+        <Route exact path={"/about"} component={About}></Route>
+        <Route exact path={"/places"} component={Places}></Route>
+      </Switch>
+    </Router>
   );
 }
 
