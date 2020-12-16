@@ -13,4 +13,10 @@ public class HotelController {
     public ResponseEntity getAllHotels() {
         return ResponseEntity.ok("All Hotels");
     }
+
+    @GetMapping(value = "{hotelName}")
+    public ResponseEntity searchByName() {
+
+        return ResponseEntity.ok("Search by name");
+    }
 }
