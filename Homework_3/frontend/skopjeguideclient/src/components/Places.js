@@ -2,6 +2,7 @@ import React from 'react'
 
 import Header from "./Header";
 import Footer from "./Footer";
+import LocationsList from "./LocationsList/LocationsList";
 
 const styles = {
     blocks: {
@@ -64,7 +65,8 @@ export default function Places() {
               </ul>
             </div>
             <div id="result_list">
-              <p>Results based on the selected category will be shown here</p>
+              <h1>Locations: </h1>
+              <LocationsList></LocationsList>
             </div>
           </div>
         </div>
