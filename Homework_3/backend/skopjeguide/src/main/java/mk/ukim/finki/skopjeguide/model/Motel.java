@@ -3,7 +3,7 @@ package mk.ukim.finki.skopjeguide.model;
 import javax.persistence.*;
 
 @Entity
-public class Motels {
+public class Motel {
     @Id
     private long id;
     private double lon;
@@ -12,7 +12,7 @@ public class Motels {
     private String website;
     private String phone;
 
-    public Motels() {
+    public Motel() {
     }
 
     public long getId() {
