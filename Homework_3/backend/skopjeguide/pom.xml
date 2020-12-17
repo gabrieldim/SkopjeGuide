@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<start-class>mk.ukim.finki.skopjeguide.SkopjeguideApplication</start-class>
 	</properties>
 
 	<dependencies>

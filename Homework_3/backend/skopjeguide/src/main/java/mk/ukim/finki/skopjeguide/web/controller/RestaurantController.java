@@ -18,6 +18,6 @@ public class RestaurantController {
 
     @GetMapping
     public ResponseEntity getAllRestaurants() {
-        return ResponseEntity.ok(this.repository.findAll());
+        return ResponseEntity.ok(this.repository.findByNameNotNull());
     }
 }
