@@ -10,7 +10,7 @@ export default function Header() {
             <nav className="navbar navbar-expand-lg navbar-light justify-content-between">
               <Link to={"/"} className="navbar-brand">
                 {" "}
-                <img src="assets/version1.png" alt="logo"></img>
+                <img src="assets/version1.png" style={{maxWidth:"100px"}}  alt="logo"></img>
               </Link>
               <button
                 className="navbar-toggler"
