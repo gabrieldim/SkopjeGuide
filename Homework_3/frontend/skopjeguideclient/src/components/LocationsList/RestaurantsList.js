@@ -20,7 +20,7 @@ const fetchData = () => {
         .then(data => data.json());
 }
 
-export default function LocationsList() {
+export default function RestaurantsList() {
     const classes = useStyles();
     const [restaurants, setRestaurants] = React.useState([]);
 
@@ -36,8 +36,9 @@ export default function LocationsList() {
     }, [])
 
     return (
+        <>
+            <h2>Restaurants:</h2>
         <List dense className={classes.root}  style={{width:"175%"}}>
-
             { restaurants && restaurants.map((value, index) => {
                 const labelId = `checkbox-list-secondary-label-${index}`;
                 return (
@@ -56,5 +57,6 @@ export default function LocationsList() {
                 );
             })}
         </List>
+            </>
     );
 }
