@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77732a16-6c0e-4f19-940c-8f3af854d028" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationMap/LocationMapView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationMap/LocationMapView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/ExchangeOfficesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/ExchangeOfficesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/FountainsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/FountainsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/HospitalsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/HospitalsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/HostelsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/HostelsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/HotelsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/HotelsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/ParkingsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/ParkingsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/PubsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/PubsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/RestaurantsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/RestaurantsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/TouristAttractionsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/TouristAttractionsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ExchangeOffices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExchangeOffices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Fountains.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Fountains.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hospitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hospitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hostels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hostels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hotels.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hotels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Parking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Parking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pubs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pubs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Restaurants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Restaurants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TouristAttractions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TouristAttractions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +74,7 @@
       <updated>1608382215480</updated>
       <workItem from="1608382225682" duration="4210000" />
       <workItem from="1608397424563" duration="6133000" />
-      <workItem from="1608404240507" duration="4088000" />
+      <workItem from="1608404240507" duration="4610000" />
     </task>
     <servers />
   </component>

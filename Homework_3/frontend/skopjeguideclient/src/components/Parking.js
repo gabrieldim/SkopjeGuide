@@ -22,19 +22,11 @@ class Parking extends Component {
         return (
             <>
                 <Header></Header>
-                <div id="blokovi" style={styles.blocks} >
+                <div style={styles.blocks} >
                     <div className="row">
                         <div className="col-md-2">
                             <h2>Categories</h2>
-                            <ul id="kategorii">
-                                <li>
-                                    <Link style={{fontSize: "150%"}} to={"/restaurants"}> Restaurants</Link>
-                                </li>
-                                <li>
-                                    <li>
-                                        <Link style={{fontSize: "150%"}} to={"/pubs"}> Pubs</Link>
-                                    </li>
-                                </li>
+                            <ul>
                                 <li>
                                     <li>
                                         <Link style={{fontSize: "150%"}} to={"/hotels"}> Hotels</Link>
@@ -44,6 +36,14 @@ class Parking extends Component {
                                 <li>
                                     <li>
                                         <Link style={{fontSize: "150%"}} to={"/hostels"}> Hostels</Link>
+                                    </li>
+                                </li>
+                                <li>
+                                    <Link style={{fontSize: "150%"}} to={"/restaurants"}> Restaurants</Link>
+                                </li>
+                                <li>
+                                    <li>
+                                        <Link style={{fontSize: "150%"}} to={"/pubs"}> Pubs</Link>
                                     </li>
                                 </li>
                                 <li>
@@ -77,7 +77,7 @@ class Parking extends Component {
                                 </li>
                             </ul>
                         </div>
-                        <div id="result_list" style={{paddingLeft:"105px"}}>
+                        <div style={{paddingLeft:"105px"}}>
                             <ParkingsList></ParkingsList>
                         </div>
                     </div>

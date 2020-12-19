@@ -35,7 +35,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to={"/restaurants"} className="nav-link">
+                    <Link to={"/hotels"} className="nav-link">
                       Places
                     </Link>
                   </li>
