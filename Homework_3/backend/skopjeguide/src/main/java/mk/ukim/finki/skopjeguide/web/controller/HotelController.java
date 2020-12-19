@@ -21,7 +21,7 @@ public class HotelController {
 
     @GetMapping
     public ResponseEntity getAllHotels() {
-        return ResponseEntity.ok(this.repository.findAll());
+        return ResponseEntity.ok(this.repository.findByNameNotNull());
     }
 
 
