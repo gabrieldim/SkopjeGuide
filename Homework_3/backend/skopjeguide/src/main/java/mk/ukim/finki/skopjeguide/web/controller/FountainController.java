@@ -19,7 +19,7 @@ public class FountainController {
 
     @GetMapping
     public ResponseEntity getAllFountains() {
-        return ResponseEntity.ok(this.repository.findAll());
+        return ResponseEntity.ok(this.repository.findByNameNotNull());
     }
 
 }

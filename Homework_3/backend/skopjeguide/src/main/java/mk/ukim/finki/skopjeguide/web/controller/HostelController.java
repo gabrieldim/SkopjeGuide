@@ -21,7 +21,7 @@ public class HostelController {
 
     @GetMapping
     public ResponseEntity getAllHostels() {
-        return ResponseEntity.ok(this.repository.findAll());
+        return ResponseEntity.ok(this.repository.findByNameNotNull());
     }
 
 

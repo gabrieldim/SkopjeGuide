@@ -20,6 +20,6 @@ public class HospitalController {
 
     @GetMapping
     public ResponseEntity getAllHospitals() {
-        return ResponseEntity.ok(this.repository.findAll());
+        return ResponseEntity.ok(this.repository.findByNameNotNull());
     }
 }
