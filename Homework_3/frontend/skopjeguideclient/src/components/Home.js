@@ -12,7 +12,7 @@ export default function Home() {
             <h2>Top Places to visit</h2>
             <p>
               Skopje is the capital and largest city in Macedonia. It is the
-              country's political, cultural, economic, and academic centre
+              country's political, cultural, economic, and academic centre.
             </p>
           </div>
         </div>
