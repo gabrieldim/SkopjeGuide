@@ -6,6 +6,7 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import {CircularProgress, Icon} from "@material-ui/core";
+import LocationMapView from "../LocationMap/LocationMapView";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -53,17 +54,25 @@ export default function FountainsList() {
                     {fountains && fountains.map((value, index) => {
                         const labelId = `checkbox-list-secondary-label-${index}`;
                         return (
+                            <div style={{height: "300px", width: "500px"}}>
+                                <div style={{float: "left"}}>
+                                    <br/>
+                                    <br/>
+                                    <ListItem key={value.id} button>
+                                        <ListItemAvatar>
+                                            <Icon className="fas fa-map-marker-alt" style={{color: "grey"}}></Icon>
+                                        </ListItemAvatar>
+                                        <ListItemText id={labelId} primary={`${value.name}`}/>
+                                        <br/>
 
-                            <ListItem key={value.id} button>
-                                <ListItemAvatar>
-                                    <Icon className="fas fa-map-marker-alt" style={{color: "grey"}}></Icon>
-                                </ListItemAvatar>
-                                <ListItemText id={labelId} primary={`${value.name}`}/>
-                                <br/>
-                                <br/>
-                                <ListItemSecondaryAction>
-                                </ListItemSecondaryAction>
-                            </ListItem>
+                                        <br/>
+                                    </ListItem>
+
+                                </div>
+                                <div style={{height: "300px", width: "500px", float: "right"}}>
+                                    <LocationMapView lat={value.lat} lon={value.lon} name={value.name}></LocationMapView>
+                                </div>
+                            </div>
                         );
                     })}
                 </List>

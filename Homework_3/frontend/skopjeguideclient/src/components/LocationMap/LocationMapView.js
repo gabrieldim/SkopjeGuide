@@ -1,12 +1,21 @@
 import React from 'react';
-import Header from "./Header";
-import Footer from "./Footer";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "../../index.css";
 
-
-export default function LocationMapView() {
+export default function LocationMapView({lat, lon, name}) {
     return (
         <>
-           <h1>Test</h1>
-        </>
+          <MapContainer center={[lat, lon]} zoom={12}  >
+              <TileLayer
+                  attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={[lat, lon]}>
+                  <Popup>
+                      {name}
+                  </Popup>
+              </Marker>
+          </MapContainer>
+            </>
     );
 }

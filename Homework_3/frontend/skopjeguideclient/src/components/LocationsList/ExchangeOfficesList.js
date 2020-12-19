@@ -5,7 +5,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import {CircularProgress, Icon} from "@material-ui/core";
+import {CircularProgress, Icon, Link} from "@material-ui/core";
+import LocationMapView from "../LocationMap/LocationMapView";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,6 +20,7 @@ const fetchData = () => {
     return fetch('https://skopje-guide.herokuapp.com/api/exchangeOffices')
         .then(data => data.json());
 }
+
 
 export default function ExchangeOfficesList() {
     const classes = useStyles();
@@ -49,24 +51,35 @@ export default function ExchangeOfficesList() {
         return (
             <>
                 <h2>Exchange offices:</h2>
-                <List dense className={classes.root} style={{width: "175%"}}>
+                <List dense className={classes.root} style={{width: "275%"}}>
+
                     {exchangeOffices && exchangeOffices.map((value, index) => {
                         const labelId = `checkbox-list-secondary-label-${index}`;
                         return (
-
+                            <div style={{height: "200px", width: "500px"}}>
+                                <div style={{float: "left"}}>
+                                    <br/>
+                                    <br/>
                             <ListItem key={value.id} button>
                                 <ListItemAvatar>
                                     <Icon className="fas fa-euro-sign" style={{color: "grey"}}></Icon>
                                 </ListItemAvatar>
                                 <ListItemText id={labelId} primary={`${value.name}`}/>
                                 <br/>
+
                                 <br/>
-                                <ListItemSecondaryAction>
-                                </ListItemSecondaryAction>
                             </ListItem>
+
+                                </div>
+                                <div style={{height: "300px", width: "500px", float: "right"}}>
+                                <LocationMapView lat={value.lat} lon={value.lon} name={value.name}></LocationMapView>
+                                </div>
+                                </div>
                         );
                     })}
                 </List>
+
+
             </>
         );
     }
