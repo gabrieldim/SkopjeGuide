@@ -5,7 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import {Icon} from "@material-ui/core";
+import {CircularProgress, Icon} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,40 +22,52 @@ const fetchData = () => {
 
 export default function HostelsList() {
     const classes = useStyles();
-    const [hotels, setHotels] = React.useState([]);
+    const [hostels, setHostels] = React.useState([]);
+
+    const [loading, setLoading] = React.useState(true);
 
     useEffect(() => {
         let mounted = true;
         fetchData().
         then(items => {
             if(mounted) {
-                setHotels(items)
+                setHostels(items)
+                setLoading(false)
             }
         })
         return () => mounted = false;
     }, [])
 
-    return (
-        <>
-            <h2>Hostels:</h2>
-            <List dense className={classes.root}  style={{width:"175%"}}>
-                { hotels && hotels.map((value, index) => {
-                    const labelId = `checkbox-list-secondary-label-${index}`;
-                    return (
+    if(loading) {
+        return (<>
+            <div style={{paddingLeft: "100px", paddingTop: "100px"}}>
+                <h3>Loading ...</h3> <CircularProgress />
+            </div>
+        </>);
+    } else {
 
-                        <ListItem key={value.id} button >
-                            <ListItemAvatar>
-                                <Icon className="fas fa-hotel" style={{color: "grey"}}></Icon>
-                            </ListItemAvatar>
-                            <ListItemText id={labelId} primary={`${value.name}`} />
-                            <br/>
-                            <br/>
-                            <ListItemSecondaryAction>
-                            </ListItemSecondaryAction>
-                        </ListItem>
-                    );
-                })}
-            </List>
-        </>
-    );
+        return (
+            <>
+                <h2>Hostels:</h2>
+                <List dense className={classes.root} style={{width: "175%"}}>
+                    {hostels && hostels.map((value, index) => {
+                        const labelId = `checkbox-list-secondary-label-${index}`;
+                        return (
+
+                            <ListItem key={value.id} button>
+                                <ListItemAvatar>
+                                    <Icon className="fas fa-hotel" style={{color: "grey"}}></Icon>
+                                </ListItemAvatar>
+                                <ListItemText id={labelId} primary={`${value.name}`}/>
+                                <br/>
+                                <br/>
+                                <ListItemSecondaryAction>
+                                </ListItemSecondaryAction>
+                            </ListItem>
+                        );
+                    })}
+                </List>
+            </>
+        );
+    }
 }

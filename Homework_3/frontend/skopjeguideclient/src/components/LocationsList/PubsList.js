@@ -5,7 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import {Icon} from "@material-ui/core";
+import {CircularProgress, Icon} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,40 +22,51 @@ const fetchData = () => {
 
 export default function PubsList() {
     const classes = useStyles();
-    const [hotels, setHotels] = React.useState([]);
+    const [pubs, setPubs] = React.useState([]);
+
+    const [loading, setLoading] = React.useState(true);
 
     useEffect(() => {
         let mounted = true;
         fetchData().
         then(items => {
             if(mounted) {
-                setHotels(items)
+                setPubs(items)
+                setLoading(false)
             }
         })
         return () => mounted = false;
     }, [])
+    if(loading) {
+        return (<>
+            <div style={{paddingLeft: "100px", paddingTop: "100px"}}>
+                <h3>Loading ...</h3> <CircularProgress />
+            </div>
+        </>);
+    } else {
 
-    return (
-        <>
-            <h2>Pubs:</h2>
-            <List dense className={classes.root}  style={{width:"175%"}}>
-                { hotels && hotels.map((value, index) => {
-                    const labelId = `checkbox-list-secondary-label-${index}`;
-                    return (
+        return (
+            <>
+                <h2>Pubs:</h2>
+                <List dense className={classes.root} style={{width: "175%"}}>
+                    {pubs && pubs.map((value, index) => {
+                        const labelId = `checkbox-list-secondary-label-${index}`;
+                        return (
 
-                        <ListItem key={value.id} button >
-                            <ListItemAvatar>
-                                <Icon className="fas fa-beer" style={{color: "grey"}}></Icon>
-                            </ListItemAvatar>
-                            <ListItemText id={labelId} primary={`${value.name}`} />
-                            <br/>
-                            <br/>
-                            <ListItemSecondaryAction>
-                            </ListItemSecondaryAction>
-                        </ListItem>
-                    );
-                })}
-            </List>
-        </>
-    );
+                            <ListItem key={value.id} button>
+                                <ListItemAvatar>
+                                    <Icon className="fas fa-beer" style={{color: "grey"}}></Icon>
+                                </ListItemAvatar>
+                                <ListItemText id={labelId} primary={`${value.name}`}/>
+                                <br/>
+                                <br/>
+                                <ListItemSecondaryAction>
+                                </ListItemSecondaryAction>
+                            </ListItem>
+                        );
+                    })}
+                </List>
+            </>
+        );
+    }
 }
