@@ -2,7 +2,7 @@ import React from 'react'
 
 import Header from "./Header";
 import Footer from "./Footer";
-import TestLists from "./LocationsList/TestLists";
+import LocationsList from "./LocationsList/LocationsList";
 
 const styles = {
     blocks: {
@@ -70,8 +70,7 @@ export default function Places() {
             </div>
             <div id="result_list" style={{paddingLeft:"105px"}}>
               <h1>Locations: </h1>
-              {/*<LocationsList></LocationsList>*/}
-              <TestLists></TestLists>
+              <LocationsList></LocationsList>
             </div>
           </div>
         </div>

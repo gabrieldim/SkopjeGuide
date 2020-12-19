@@ -1,33 +1,60 @@
-import React, {Component} from 'react';
+import React, {useEffect} from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import {Icon} from "@material-ui/core";
 
-class LocationsList extends Component {
-    constructor(props) {
-        super(props);
+const useStyles = makeStyles((theme) => ({
+    root: {
+        width: '100%',
+        maxWidth: 360,
+        backgroundColor: theme.palette.background.paper,
+    },
+}));
 
-    }
-
-    async componentDidMount() {
-        const data = await fetch('https://skopje-guide.herokuapp.com/api/restaurants');
-        const json = await data.json();
-
-        let list = document.getElementById("locationsList");
-
-        for(let i=0; i<json.length; i++) {
-            list.innerHTML += `<li>${json[i].lon} ${json[i].lat}  ${json[i].name} ${json[i].website}  ${json[i].phone}</li>`;
-        }
-    }
-
-    render() {
-        return (
-            <div>
-            <h1>Locations list</h1>
-        <ul id="locationsList">
-
-            </ul>
-            </div>
-    );
-    }
+const fetchData = () => {
+    return fetch('https://skopje-guide.herokuapp.com/api/restaurants')
+        .then(data => data.json());
 }
 
+export default function LocationsList() {
+    const classes = useStyles();
+    const [restaurants, setRestaurants] = React.useState([]);
 
-export default LocationsList;
+    useEffect(() => {
+        let mounted = true;
+        fetchData().
+        then(items => {
+            if(mounted) {
+                setRestaurants(items)
+            }
+        })
+        return () => mounted = false;
+    }, [])
+
+    return (
+        <List dense className={classes.root}  style={{width:"175%"}}>
+
+            { restaurants && restaurants.map((value, index) => {
+                const labelId = `checkbox-list-secondary-label-${index}`;
+                return (
+
+                    <ListItem key={value.id} button >
+                        <ListItemAvatar>
+                            <Icon className="fas fa-utensils" style={{color: "grey"}}></Icon>
+                        </ListItemAvatar>
+                        <ListItemText id={labelId} primary={`${value.name}`} />
+                        <br/>
+                        <br/>
+                        <ListItemSecondaryAction>
+
+                        </ListItemSecondaryAction>
+                    </ListItem>
+                );
+            })}
+        </List>
+    );
+}
