@@ -53,28 +53,56 @@ export default function ParkingsList() {
                 <List dense className={classes.root} style={{width: "175%"}}>
                     {parkings && parkings.map((value, index) => {
                         const labelId = `checkbox-list-secondary-label-${index}`;
-                        return (
-                            <div style={{height: "300px", width: "500px"}}>
-                                <div style={{float: "left"}}>
-                                    <br/>
-                                    <br/>
-                                    <ListItem key={value.id} button>
-                                        <ListItemAvatar>
-                                            <Icon className="fas fa-parking" style={{color: "grey"}}></Icon>
-                                        </ListItemAvatar>
-                                        <ListItemText id={labelId} primary={`${value.name}`}/>
-                                        <br/>
 
+                        if(value.name === null) {
+                            return (
+                                <div style={{height: "300px", width: "500px"}}>
+                                    <div style={{float: "left"}}>
                                         <br/>
-                                    </ListItem>
+                                        <br/>
+                                        <ListItem key={value.id} button>
+                                            <ListItemAvatar>
+                                                <Icon className="fas fa-parking" style={{color: "grey"}}></Icon>
+                                            </ListItemAvatar>
+                                            <ListItemText id={labelId} primary={"Parking"}/>
+                                            <br/>
 
+                                            <br/>
+                                        </ListItem>
+
+                                    </div>
+                                    <div style={{height: "300px", width: "500px", float: "right"}}>
+                                        <LocationMapView lat={value.lat} lon={value.lon} name={value.name}></LocationMapView>
+                                    </div>
                                 </div>
-                                <div style={{height: "300px", width: "500px", float: "right"}}>
-                                    <LocationMapView lat={value.lat} lon={value.lon} name={value.name}></LocationMapView>
+                            );
+                        } else {
+
+                            return (
+                                <div style={{height: "300px", width: "500px"}}>
+                                    <div style={{float: "left"}}>
+                                        <br/>
+                                        <br/>
+                                        <ListItem key={value.id} button>
+                                            <ListItemAvatar>
+                                                <Icon className="fas fa-parking" style={{color: "grey"}}></Icon>
+                                            </ListItemAvatar>
+                                            <ListItemText id={labelId} primary={`${value.name}`}/>
+                                            <br/>
+
+                                            <br/>
+                                        </ListItem>
+
+                                    </div>
+                                    <div style={{height: "300px", width: "500px", float: "right"}}>
+                                        <LocationMapView lat={value.lat} lon={value.lon}
+                                                         name={value.name}></LocationMapView>
+                                    </div>
                                 </div>
-                            </div>
-                        );
+                            );
+                        }
                     })}
+
                 </List>
             </>
         );

@@ -4,7 +4,16 @@
 
 ---
 
+## React App
+https://skopjeguide.netlify.app/
+
+The React applications is deployed on the Netlify CDN
+
+--- 
+
 ## Spring Boot API Endpoints
+
+The Spring Boot API is deployed on Ubuntu 18.04 Server behind an NGINX proxy server.
 
 API Base URL: https://skopjeguide.francecentral.cloudapp.azure.com
 

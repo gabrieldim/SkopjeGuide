@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77732a16-6c0e-4f19-940c-8f3af854d028" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../backend/skopjeguide/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../backend/skopjeguide/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/ExchangeOfficesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/ExchangeOfficesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/FountainsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/FountainsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/HospitalsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/HospitalsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/HostelsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/HostelsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/HotelsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/HotelsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LocationsList/ParkingsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/ParkingsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/PubsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/PubsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/RestaurantsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/RestaurantsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocationsList/TouristAttractionsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocationsList/TouristAttractionsList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +71,7 @@
       <workItem from="1608427671706" duration="70000" />
       <workItem from="1608429303193" duration="998000" />
       <workItem from="1608459003422" duration="56000" />
-      <workItem from="1608461239171" duration="1758000" />
+      <workItem from="1608461239171" duration="5297000" />
     </task>
     <servers />
   </component>
