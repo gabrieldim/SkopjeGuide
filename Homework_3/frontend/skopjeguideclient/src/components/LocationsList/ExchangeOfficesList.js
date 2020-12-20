@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const fetchData = () => {
-    return fetch('https://skopje-guide.herokuapp.com/api/exchangeOffices')
+    return fetch('https://skopjeguide.francecentral.cloudapp.azure.com/api/exchangeOffices')
         .then(data => data.json());
 }
 

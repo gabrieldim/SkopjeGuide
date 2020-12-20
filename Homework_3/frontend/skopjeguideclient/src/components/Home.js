@@ -9,7 +9,7 @@ export default function Home() {
       <div className="row justify-content-center">
         <div className="col-xl-6">
           <div className="section_tittle text-center">
-            <h2>Top Places to visit</h2>
+            <h2>Top Places to visit in Skopje</h2>
             <p>
               Skopje is the capital and largest city in Macedonia. It is the
               country's political, cultural, economic, and academic centre.

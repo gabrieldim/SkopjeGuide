@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const fetchData = () => {
-    return fetch('https://skopje-guide.herokuapp.com/api/pubs')
+    return fetch('https://skopjeguide.francecentral.cloudapp.azure.com/api/pubs')
         .then(data => data.json());
 }
 
