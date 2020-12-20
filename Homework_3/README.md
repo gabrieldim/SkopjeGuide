@@ -7,7 +7,7 @@
 ## React App
 https://skopjeguide.netlify.app/
 
-The React applications is deployed on the Netlify CDN
+The React application is deployed on the Netlify CDN.
 
 --- 
 
