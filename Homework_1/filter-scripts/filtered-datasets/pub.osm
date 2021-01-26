@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmfilter 1.4.4">
+	<bounds minlat="41.9053" minlon="21.2537" maxlat="42.088" maxlon="21.6959"/>
+	<node id="309875534" lat="41.9950681" lon="21.4355937" version="18" timestamp="2018-01-16T16:48:45Z" changeset="55498834" uid="6970734" user="Dekacc">
+		<tag k="addr:city" v="Cкoпje"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:housename" v="Gradski Trgovski Centar (GTC)"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Кеј 13 Ноември"/>
+		<tag k="addr:street:en" v="Kay 13th November"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="internet_access" v="wlan"/>
+		<tag k="name" v="Ирски паб Св. Патрик"/>
+		<tag k="name:en" v="St. Patrick Irish Pub"/>
+		<tag k="opening_hours" v="10:00-24:00, Fr-Sa 10:00-01:00"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="payment:coins" v="yes"/>
+		<tag k="payment:mastercard" v="yes"/>
+		<tag k="payment:notes" v="yes"/>
+		<tag k="payment:visa" v="yes"/>
+		<tag k="smoking" v="separated"/>
+		<tag k="website" v="http://www.irishpub.com.mk/"/>
+		<tag k="wheelchair" v="yes"/>
+		<tag k="wifi" v="free"/>
+	</node>
+	<node id="553425017" lat="41.9957302" lon="21.4302534" version="5" timestamp="2015-02-10T08:05:16Z" changeset="28744902" uid="2037651" user="Francois555">
+		<tag k="addr:city" v="Скопје"/>
+		<tag k="addr:housenumber" v="2/4"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Никола Вапцаров"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="name" v="London Pub"/>
+		<tag k="name:mk" v="Паб „Лондон“"/>
+		<tag k="operator" v="Македонијатурист"/>
+	</node>
+	<node id="1355330790" lat="42.0011509" lon="21.4175412" version="5" timestamp="2018-11-25T12:49:03Z" changeset="64866120" uid="6970734" user="Dekacc">
+		<tag k="amenity" v="pub"/>
+		<tag k="name" v="Кафе Кино Карпош"/>
+	</node>
+	<node id="1747462360" lat="41.997012" lon="21.4150033" version="3" timestamp="2016-04-27T16:47:42Z" changeset="38926255" uid="1468248" user="TheBlackMan">
+		<tag k="amenity" v="pub"/>
+		<tag k="name" v="Конак"/>
+	</node>
+	<node id="1935491365" lat="41.9951834" lon="21.4352156" version="11" timestamp="2019-05-16T13:11:25Z" changeset="70318404" uid="158784" user="bjankuloski">
+		<tag k="addr:city" v="Cкoпje"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:housename" v="Gradski Trgovski Centar Skopje"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Кеј 13 Ноември"/>
+		<tag k="addr:street:en" v="Kay 13th November"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="int_name" v="Carpe Diem"/>
+		<tag k="name" v="Карпе дием"/>
+		<tag k="name:en" v="Carpe Diem"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="smoking" v="separated"/>
+	</node>
+	<node id="2695392360" lat="41.9954474" lon="21.4343506" version="12" timestamp="2018-01-16T16:48:47Z" changeset="55498834" uid="6970734" user="Dekacc">
+		<tag k="addr:city" v="Скопје"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:housename" v="Gradski Trgovski Centar Skopje"/>
+		<tag k="addr:housenumber" v="28"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Кеј 13 Ноември"/>
+		<tag k="addr:street:en" v="Kay 13th November"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="internet_access" v="wlan"/>
+		<tag k="internet_access:fee" v="no"/>
+		<tag k="name" v="Casa Cubana"/>
+		<tag k="opening_hours" v="10:00-24:00, Fr-Sa 10:00-01:00"/>
+		<tag k="operator" v="Casa Cubana"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="smoking" v="outside"/>
+		<tag k="takeaway" v="no"/>
+		<tag k="wheelchair" v="yes"/>
+	</node>
+	<node id="3427388702" lat="41.9964357" lon="21.4147832" version="4" timestamp="2019-02-21T20:57:21Z" changeset="67443610" uid="6970734" user="Dekacc">
+		<tag k="addr:street" v="Христо Смирненски"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="name" v="Дринкерс Парадајз"/>
+		<tag k="name:en" v="Drinkers Paradise"/>
+		<tag k="opening_hours" v="Mo-Su 00:00-01:00,10:00-24:00"/>
+		<tag k="smoking" v="outside"/>
+	</node>
+	<node id="3427391618" lat="41.9989335" lon="21.4204573" version="3" timestamp="2019-03-01T17:06:51Z" changeset="67693132" uid="4240913" user="Corban8">
+		<tag k="amenity" v="pub"/>
+		<tag k="name" v="Браво"/>
+		<tag k="name:en" v="Bravo"/>
+		<tag k="smoking" v="outside"/>
+	</node>
+	<node id="4126731457" lat="41.9973371" lon="21.4343571" version="4" timestamp="2018-01-16T15:35:17Z" changeset="55496714" uid="6970734" user="Dekacc">
+		<tag k="amenity" v="pub"/>
+		<tag k="cocktails" v="yes"/>
+		<tag k="cuisine" v="pizza"/>
+		<tag k="food" v="yes"/>
+		<tag k="name" v="Lounge Bar Divan"/>
+		<tag k="operator" v="Hotel Stone Bridge"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="smoking" v="separated"/>
+	</node>
+	<node id="4327921319" lat="42.0032279" lon="21.3986571" version="1" timestamp="2016-07-30T11:55:59Z" changeset="41126106" uid="344903" user="Toyota_79">
+		<tag k="amenity" v="pub"/>
+	</node>
+	<node id="4594432343" lat="41.9955027" lon="21.4341686" version="3" timestamp="2019-05-16T13:11:24Z" changeset="70318404" uid="158784" user="bjankuloski">
+		<tag k="addr:city" v="Скопје"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:housename" v="Gradski Trgovski Centar Skopje"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Кеј 13 Ноември"/>
+		<tag k="addr:street:en" v="Kay 13th November"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="int_name" v="Cafe Alo Alo"/>
+		<tag k="name" v="Ало ало"/>
+		<tag k="operator" v="Cafe Alo Alo"/>
+		<tag k="outdoor_seating" v="no"/>
+		<tag k="smoking" v="no"/>
+		<tag k="takeaway" v="no"/>
+	</node>
+	<node id="4594432346" lat="41.9954679" lon="21.4342829" version="3" timestamp="2019-05-16T13:11:24Z" changeset="70318404" uid="158784" user="bjankuloski">
+		<tag k="addr:city" v="Скопје"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:housename" v="Gradski Trgovski Centar Skopje"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Кеј 13 Ноември"/>
+		<tag k="addr:street:en" v="Kay 13th November"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="int_name" v="The Dubliner"/>
+		<tag k="name" v="Даблинер"/>
+		<tag k="operator" v="The Dubliner"/>
+		<tag k="outdoor_seating" v="no"/>
+		<tag k="smoking" v="no"/>
+		<tag k="takeaway" v="no"/>
+	</node>
+	<node id="4839149455" lat="41.9957057" lon="21.4320378" version="2" timestamp="2018-01-16T16:48:45Z" changeset="55498834" uid="6970734" user="Dekacc">
+		<tag k="amenity" v="pub"/>
+		<tag k="microbrewery" v="yes"/>
+		<tag k="name" v="Колектив"/>
+		<tag k="name:en" v="Kolektiv"/>
+		<tag k="operator" v="Колектив"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="smoking" v="outside"/>
+	</node>
+	<node id="5093444115" lat="41.9955629" lon="21.426176" version="2" timestamp="2017-12-16T23:03:23Z" changeset="54692334" uid="6970734" user="Dekacc">
+		<tag k="amenity" v="pub"/>
+		<tag k="name" v="Piazza Liberta"/>
+		<tag k="name:mk" v="Пјаца Либерта"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="website" v="http://piazzaliberta.mk/"/>
+	</node>
+	<node id="5260415957" lat="41.9981195" lon="21.4239699" version="1" timestamp="2017-12-02T17:26:53Z" changeset="54276305" uid="1836257" user="filipgd1">
+		<tag k="addr:city" v="Cкoпje"/>
+		<tag k="addr:housenumber" v="21/A2-1"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Булевар Партизански Одреди"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="name" v="Паб Порта"/>
+		<tag k="name:en" v="Pub Porta"/>
+		<tag k="opening_hours" v="Mo-Th 09:00-00:00, Fr-Sa 09:00-01:00"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="smoking" v="isolated"/>
+	</node>
+	<node id="5289611966" lat="42.0057641" lon="21.3813769" version="1" timestamp="2017-12-17T12:16:44Z" changeset="54701663" uid="6970734" user="Dekacc">
+		<tag k="amenity" v="pub"/>
+		<tag k="name" v="Pub"/>
+	</node>
+	<node id="5559033546" lat="41.9974686" lon="21.4349757" version="1" timestamp="2018-04-17T11:20:22Z" changeset="58164814" uid="6970734" user="Dekacc">
+		<tag k="amenity" v="pub"/>
+		<tag k="cocktails" v="yes"/>
+		<tag k="cuisine" v="pizza"/>
+		<tag k="food" v="yes"/>
+		<tag k="name" v="Lounge Bar Divan"/>
+		<tag k="operator" v="Hotel Stone Bridge"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="smoking" v="separated"/>
+	</node>
+	<node id="5901737591" lat="41.9956625" lon="21.4320988" version="1" timestamp="2018-09-12T12:25:51Z" changeset="62519001" uid="6066920" user="KorBorNor">
+		<tag k="amenity" v="pub"/>
+		<tag k="name:en" v="Pivnika Temov"/>
+	</node>
+	<node id="5901752386" lat="42.0001822" lon="21.4360203" version="1" timestamp="2018-09-12T12:37:01Z" changeset="62519370" uid="6066920" user="KorBorNor">
+		<tag k="amenity" v="pub"/>
+		<tag k="name:en" v="Damar"/>
+	</node>
+	<node id="5901752487" lat="42.0001818" lon="21.4358622" version="1" timestamp="2018-09-12T12:36:43Z" changeset="62519365" uid="6066920" user="KorBorNor">
+		<tag k="amenity" v="pub"/>
+		<tag k="name:en" v="Winery Temov"/>
+	</node>
+	<node id="6815931485" lat="42.0000999" lon="21.4209535" version="1" timestamp="2019-09-22T17:52:47Z" changeset="74777891" uid="9047835" user="YunDi88">
+		<tag k="amenity" v="pub"/>
+		<tag k="name" v="Stobi Winery"/>
+	</node>
+	<node id="6938084585" lat="41.9987606" lon="21.4348303" version="1" timestamp="2019-11-01T19:35:03Z" changeset="76511802" uid="4647315" user="givanmondo">
+		<tag k="addr:street" v="Булевар Гоце Делчев"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="cuisine" v="balkan"/>
+		<tag k="name:en" v="Mal Altan"/>
+	</node>
+	<way id="38093037" version="4" timestamp="2017-12-16T22:50:12Z" changeset="54692081" uid="6970734" user="Dekacc">
+		<nd ref="448039934"/>
+		<nd ref="5288493001"/>
+		<nd ref="448039935"/>
+		<nd ref="448039936"/>
+		<nd ref="448039937"/>
+		<nd ref="5288493000"/>
+		<nd ref="1999632592"/>
+		<nd ref="448039939"/>
+		<nd ref="448039934"/>
+		<tag k="addr:city" v="Cкoпje"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="building" v="yes"/>
+		<tag k="designation" v="Motorcycle Pub"/>
+		<tag k="name" v="Custom Pub"/>
+		<tag k="wheelchair" v="yes"/>
+		<tag k="wheelchair:description" v="The toilet is not accessible"/>
+	</way>
+	<way id="176158371" version="3" timestamp="2018-08-03T18:33:42Z" changeset="61338601" uid="344903" user="Toyota_79">
+		<nd ref="1867138526"/>
+		<nd ref="1867138553"/>
+		<nd ref="1867138563"/>
+		<nd ref="1867138494"/>
+		<nd ref="1867138526"/>
+		<tag k="addr:city" v="Skopje"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:housenumber" v="18A"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Булевар Климент Охридски"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="building" v="yes"/>
+		<tag k="email" v="cosy.cosybar@gmail.com"/>
+		<tag k="is_in:city" v="Скопје"/>
+		<tag k="microbrewery" v="yes"/>
+		<tag k="name" v="Special Beer Bar COSY"/>
+		<tag k="name:en" v="Special Beer Bar COSY"/>
+		<tag k="nat_name" v="Коси Бар"/>
+		<tag k="old_int_name" v="Krigla"/>
+		<tag k="old_name" v="Кригла"/>
+		<tag k="opening_hours" v="Tu-Th 16:00-00:00, Fr-Sa 16:00-01:00; Su 16:00-00:00"/>
+		<tag k="operator" v="Cosy Bar"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="payment:coins" v="yes"/>
+		<tag k="payment:notes" v="yes"/>
+		<tag k="phone" v="+389 70 364 224"/>
+		<tag k="smoking" v="outside"/>
+		<tag k="website" v="https://www.facebook.com/pg/cosy.cosybar/about/?ref=page_internal"/>
+		<tag k="wheelchair" v="no"/>
+	</way>
+	<way id="176326155" version="3" timestamp="2019-12-18T19:52:59Z" changeset="78598971" uid="344903" user="Toyota_79">
+		<nd ref="1868651055"/>
+		<nd ref="1868651053"/>
+		<nd ref="1868651054"/>
+		<nd ref="1868651049"/>
+		<nd ref="1868651055"/>
+		<tag k="addr:city" v="Cкoпje"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="building" v="yes"/>
+		<tag k="name" v="Tribeca - Botanic Shop &#38; Cafe"/>
+		<tag k="operator" v="Tribeca - Botanic Shop &#38; Cafe"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="website" v="https://www.facebook.com/tribecamk/?__tn__=%2Cd%2CP-R&#38;eid=ARC3wmlUL3YaOuUJdA_ap267CSHUG_68B1QTrlKyTD3Xe057c62pmhmj2210OcbcJzVDguMBz2FYnqK7"/>
+	</way>
+	<way id="358395487" version="5" timestamp="2019-05-28T11:25:54Z" changeset="70692923" uid="158784" user="bjankuloski">
+		<nd ref="3633127008"/>
+		<nd ref="3633194102"/>
+		<nd ref="3633194314"/>
+		<nd ref="3633127007"/>
+		<nd ref="3633127008"/>
+		<tag k="addr:city" v="Cкoпje"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:housenumber" v="бб"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Лондонска"/>
+		<tag k="addr:street:en" v="Londonska"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="building" v="yes"/>
+		<tag k="cuisine" v="regional"/>
+		<tag k="email" v="info@forza.com.mk"/>
+		<tag k="food" v="yes"/>
+		<tag k="name" v="Кaфе бар „Форца“"/>
+		<tag k="name:en" v="Forza Cafe"/>
+		<tag k="opening_hours" v="Mo-Su 00:00-01:00,08:00-24:00"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="phone" v="+389 2 3060333"/>
+		<tag k="smoking" v="separated"/>
+		<tag k="website" v="www.forza.com.mk"/>
+	</way>
+	<way id="386708070" version="3" timestamp="2019-02-27T22:30:18Z" changeset="67633576" uid="480208" user="Svetle">
+		<nd ref="1750158901"/>
+		<nd ref="1750158909"/>
+		<nd ref="3900618916"/>
+		<nd ref="3892560808"/>
+		<nd ref="1750158901"/>
+		<tag k="addr:city" v="Cкoпje"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:housenumber" v="91"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Орце Николов"/>
+		<tag k="addr:street:en" v="Orce Nikolov"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="410925022" version="3" timestamp="2019-09-15T08:30:29Z" changeset="74490751" uid="4242580" user="Ppx">
+		<nd ref="4126731787"/>
+		<nd ref="4126731788"/>
+		<nd ref="4126731782"/>
+		<nd ref="4126731785"/>
+		<nd ref="4126731787"/>
+		<tag k="addr:city" v="Cкoпje"/>
+		<tag k="addr:city:en" v="Skopje"/>
+		<tag k="addr:country" v="MK"/>
+		<tag k="addr:housenumber" v="1"/>
+		<tag k="addr:postcode" v="1000"/>
+		<tag k="addr:street" v="Градиште"/>
+		<tag k="addr:street:en" v="Gradiste"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="building" v="house"/>
+		<tag k="cuisine" v="regional"/>
+		<tag k="food" v="yes"/>
+		<tag k="int_name" v="Pivnica Star Grad"/>
+		<tag k="internet_access" v="wlan"/>
+		<tag k="microbrewery" v="yes"/>
+		<tag k="name" v="Пивница Стар град"/>
+		<tag k="name:de" v="Old Town Brewery"/>
+		<tag k="name:en" v="Old Town Brewery"/>
+		<tag k="opening_hours" v="Mo-Su 00:00-02:00,09:00-24:00"/>
+		<tag k="outdoor_seating" v="yes"/>
+		<tag k="smoking" v="separated"/>
+	</way>
+	<way id="477325812" version="1" timestamp="2017-02-26T17:51:25Z" changeset="46421642" uid="4358750" user="mariegorman">
+		<nd ref="4706991212"/>
+		<nd ref="4706991210"/>
+		<nd ref="3781260344"/>
+		<nd ref="4706991211"/>
+		<nd ref="4706991212"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="building" v="yes"/>
+		<tag k="name" v="Стоби"/>
+		<tag k="outdoor_seating" v="yes"/>
+	</way>
+</osm>
