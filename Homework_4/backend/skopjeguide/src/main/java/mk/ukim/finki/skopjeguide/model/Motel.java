@@ -2,6 +2,9 @@ package mk.ukim.finki.skopjeguide.model;
 
 import javax.persistence.*;
 
+/**
+ * Java class for Motels in Skopje.
+ */
 @Entity
 public class Motel {
     @Id
@@ -15,6 +18,26 @@ public class Motel {
     public Motel() {
     }
 
+    /**
+     * Constructor with all parameters.
+     *
+     * @param id
+     * @param lon
+     * @param lat
+     * @param name
+     * @param website
+     * @param phone
+     */
+    public Motel(long id, double lon, double lat, String name, String website, String phone) {
+        this.id = id;
+        this.lon = lon;
+        this.lat = lat;
+        this.name = name;
+        this.website = website;
+        this.phone = phone;
+    }
+
+    //GET AND SET METHODS
     public long getId() {
         return id;
     }
