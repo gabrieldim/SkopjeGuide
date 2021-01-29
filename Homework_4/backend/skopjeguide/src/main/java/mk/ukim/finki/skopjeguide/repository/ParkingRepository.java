@@ -16,7 +16,7 @@ public interface ParkingRepository extends JpaRepository<Parking, Long> {
     /**
      * This is method and this methods function is to find the names that have not null values.
      *
-     * @return List<Attraction>
+     * @return List<Parking>
      */
     List<Parking> findByNameNotNull();
 
