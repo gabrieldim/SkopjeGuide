@@ -17,7 +17,7 @@ public interface PubRepository extends JpaRepository<Pub, Long> {
     /**
      * This is method and this methods function is to find the names that have not null values.
      *
-     * @return List<Attraction>
+     * @return List<Pub>
      */
     List<Pub> findByNameNotNull();
 
