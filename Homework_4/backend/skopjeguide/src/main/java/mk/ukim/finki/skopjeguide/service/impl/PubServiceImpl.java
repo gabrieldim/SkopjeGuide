@@ -18,6 +18,6 @@ public class PubServiceImpl implements PubService {
 
     @Override
     public List<Pub> listall() {
-        return this.pubRepository.findAll();
+        return this.pubRepository.findByNameNotNull();
     }
 }

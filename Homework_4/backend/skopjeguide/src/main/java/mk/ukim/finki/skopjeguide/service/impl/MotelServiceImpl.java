@@ -18,6 +18,6 @@ public class MotelServiceImpl implements MotelService {
 
     @Override
     public List<Motel> listall() {
-        return this.motelsRepository.findAll();
+        return this.motelsRepository.findByNameNotNull();
     }
 }

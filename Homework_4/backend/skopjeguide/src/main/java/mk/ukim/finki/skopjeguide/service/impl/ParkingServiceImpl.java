@@ -18,6 +18,6 @@ public class ParkingServiceImpl implements ParkingService {
 
     @Override
     public List<Parking> listall() {
-        return this.parkingRepository.findAll();
+        return this.parkingRepository.findByNameNotNull();
     }
 }
