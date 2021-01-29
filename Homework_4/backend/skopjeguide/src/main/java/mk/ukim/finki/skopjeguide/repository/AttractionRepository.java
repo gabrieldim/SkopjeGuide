@@ -11,7 +11,10 @@ import java.util.List;
  * First parameter represents the class name accordingly and the second is for the
  * type of value for the Id in that class.
  */
+
 public interface AttractionRepository extends JpaRepository<Attraction, Long> {
+
+
     /**
      * This is method and this methods function is to find the names that have not null values.
      *

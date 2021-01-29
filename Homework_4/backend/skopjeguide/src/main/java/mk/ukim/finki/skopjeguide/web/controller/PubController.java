@@ -1,6 +1,7 @@
 package mk.ukim.finki.skopjeguide.web.controller;
 
 import mk.ukim.finki.skopjeguide.repository.PubRepository;
+import mk.ukim.finki.skopjeguide.service.PubService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,17 +15,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/pubs")
 @CrossOrigin("*")
 public class PubController {
-    /**
-     * Repository is injected using this variable and the constructor.
+
+   /**
+     * Service is injected using this variable and the constructor.
      */
-    private final PubRepository repository;
-    /**
+    private final PubService pubService;
+
+   /**
      * Constructor with parameter.
      *
      * @param repository
      */
-    public PubController(PubRepository repository) {
-        this.repository = repository;
+    public PubController(PubService pubService) {
+        this.pubService = pubService;
+
+ 
     }
     /**
      * Getter that returns all values that are different than null.
@@ -33,6 +38,6 @@ public class PubController {
      */
     @GetMapping
     public ResponseEntity getAllPubs() {
-        return ResponseEntity.ok(this.repository.findAll());
+        return ResponseEntity.ok(this.pubService.listall());
     }
 }

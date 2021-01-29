@@ -1,6 +1,7 @@
 package mk.ukim.finki.skopjeguide.web.controller;
 
 import mk.ukim.finki.skopjeguide.repository.RestaurantRepository;
+import mk.ukim.finki.skopjeguide.service.RestaurantService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,17 +15,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/restaurants")
 @CrossOrigin("*")
 public class RestaurantController {
+
+  
     /**
-     * Repository is injected using this variable and the constructor.
+     * Service is injected using this variable and the constructor.
      */
-    private final RestaurantRepository repository;
-    /**
+    private final RestaurantService restaurantService;
+
+   /**
      * Constructor with parameter.
      *
      * @param repository
      */
-    public RestaurantController(RestaurantRepository repository) {
-        this.repository = repository;
+    public RestaurantController(RestaurantService restaurantService) {
+        this.restaurantService = restaurantService;
+
+  
     }
     /**
      * Getter that returns all values that are different than null.
@@ -33,6 +39,6 @@ public class RestaurantController {
      */
     @GetMapping
     public ResponseEntity getAllRestaurants() {
-        return ResponseEntity.ok(this.repository.findByNameNotNull());
+        return ResponseEntity.ok(this.restaurantService.listall());
     }
 }

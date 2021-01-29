@@ -2,6 +2,7 @@ package mk.ukim.finki.skopjeguide.web.controller;
 
 import mk.ukim.finki.skopjeguide.repository.AttractionRepository;
 import mk.ukim.finki.skopjeguide.repository.CaffeRepository;
+import mk.ukim.finki.skopjeguide.service.CaffeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,19 +17,23 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/caffes")
 @CrossOrigin("*")
 public class CaffeController {
-    /**
-     * Repository is injected using this variable and the constructor.
-     */
-    private final CaffeRepository repository;
 
-    /**
+
+   /**
+     * Service is injected using this variable and the constructor.
+     */
+    private final CaffeService caffeService;
+
+  
+   /**
      * Constructor with parameter.
      *
      * @param repository
      */
-    public CaffeController(CaffeRepository repository){
-        this.repository=repository;
+    public CaffeController(CaffeService caffeService) {
+        this.caffeService = caffeService;
     }
+
 
     /**
      * Getter that returns all values that are different than null.
@@ -36,5 +41,5 @@ public class CaffeController {
      * @return
      */
     @GetMapping
-    public ResponseEntity getAllCaffes(){return ResponseEntity.ok(this.repository.findByNameNotNull());}
+    public ResponseEntity getAllCaffes(){return ResponseEntity.ok(this.caffeService.listall());}
 }

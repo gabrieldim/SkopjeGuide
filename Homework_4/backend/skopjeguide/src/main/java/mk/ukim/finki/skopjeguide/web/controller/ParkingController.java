@@ -1,6 +1,7 @@
 package mk.ukim.finki.skopjeguide.web.controller;
 
 import mk.ukim.finki.skopjeguide.repository.ParkingRepository;
+import mk.ukim.finki.skopjeguide.service.ParkingService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,17 +15,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/parkings")
 @CrossOrigin("*")
 public class ParkingController {
-    /**
-     * Repository is injected using this variable and the constructor.
+
+ /**
+     * Service is injected using this variable and the constructor.
      */
-    private final ParkingRepository repository;
-    /**
+    private final ParkingService parkingService;
+
+   /**
      * Constructor with parameter.
      *
      * @param repository
      */
-    public ParkingController(ParkingRepository repository) {
-        this.repository =  repository;
+    public ParkingController(ParkingService parkingService) {
+        this.parkingService = parkingService;
+
     }
     /**
      * Getter that returns all values that are different than null.
@@ -33,7 +37,7 @@ public class ParkingController {
      */
     @GetMapping
     public ResponseEntity getAllParkings() {
-        return ResponseEntity.ok(this.repository.findAll());
+        return ResponseEntity.ok(this.parkingService.listall());
     }
 }
 
