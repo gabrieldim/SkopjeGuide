@@ -2,6 +2,7 @@ package mk.ukim.finki.skopjeguide.web.controller;
 
 
 import mk.ukim.finki.skopjeguide.repository.HotelRepository;
+import mk.ukim.finki.skopjeguide.service.HotelService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,17 +16,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/hotels")
 @CrossOrigin("*")
 public class HotelController {
+
     /**
-     * Repository is injected using this variable and the constructor.
+     * Service is injected using this variable and the constructor.
      */
-    private final HotelRepository repository;
-    /**
+    private final HotelService hotelService;
+
+     /**
      * Constructor with parameter.
      *
      * @param repository
      */
-    public HotelController(HotelRepository repository) {
-        this.repository = repository;
+   
+    public HotelController(HotelService hotelService) {
+        this.hotelService = hotelService;
+  
+ 
     }
     /**
      * Getter that returns all values that are different than null.
@@ -34,7 +40,7 @@ public class HotelController {
      */
     @GetMapping
     public ResponseEntity getAllHotels() {
-        return ResponseEntity.ok(this.repository.findByNameNotNull());
+        return ResponseEntity.ok(this.hotelService.listall());
     }
 
 

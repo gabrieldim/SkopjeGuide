@@ -3,6 +3,7 @@ package mk.ukim.finki.skopjeguide.web.controller;
 
 import mk.ukim.finki.skopjeguide.repository.HospitalRepository;
 import mk.ukim.finki.skopjeguide.repository.RestaurantRepository;
+import mk.ukim.finki.skopjeguide.service.HospitalService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,17 +17,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/hospitals")
 @CrossOrigin("*")
 public class HospitalController {
-    /**
-     * Repository is injected using this variable and the constructor.
+
+   /**
+     * Service is injected using this variable and the constructor.
      */
-    private HospitalRepository repository;
-    /**
+    private HospitalService hospitalService;
+
+   /**
      * Constructor with parameter.
      *
      * @param repository
      */
-    public HospitalController(HospitalRepository repository) {
-        this.repository = repository;
+    public HospitalController(HospitalService hospitalService) {
+        this.hospitalService = hospitalService;
+
+   
     }
     /**
      * Getter that returns all values that are different than null.
@@ -35,6 +40,6 @@ public class HospitalController {
      */
     @GetMapping
     public ResponseEntity getAllHospitals() {
-        return ResponseEntity.ok(this.repository.findByNameNotNull());
+        return ResponseEntity.ok(this.hospitalService.listall());
     }
 }

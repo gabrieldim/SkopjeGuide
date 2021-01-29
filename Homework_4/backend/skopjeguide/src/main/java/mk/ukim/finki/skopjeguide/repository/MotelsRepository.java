@@ -11,11 +11,17 @@ import java.util.List;
  * First parameter represents the class name accordingly and the second is for the
  * type of value for the Id in that class.
  */
+
 public interface MotelsRepository extends JpaRepository<Motel, Long> {
+
+  
     /**
      * This is method and this methods function is to find the names that have not null values.
      *
-     * @return List<Motel>
+     * @return List<Attraction>
      */
     List<Motel> findByNameNotNull();
+
+
+
 }
