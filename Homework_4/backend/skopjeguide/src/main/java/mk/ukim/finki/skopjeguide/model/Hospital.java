@@ -2,7 +2,9 @@ package mk.ukim.finki.skopjeguide.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
+/**
+ * Java class for Hospitals in Skopje.
+ */
 @Entity
 public class Hospital {
 
@@ -17,6 +19,26 @@ public class Hospital {
     public Hospital() {
     }
 
+    /**
+     * Constructor with all parameters.
+     *
+     * @param id
+     * @param lon
+     * @param lat
+     * @param name
+     * @param website
+     * @param phone
+     */
+    public Hospital(long id, double lon, double lat, String name, String website, String phone) {
+        this.id = id;
+        this.lon = lon;
+        this.lat = lat;
+        this.name = name;
+        this.website = website;
+        this.phone = phone;
+    }
+
+    //GET AND SET METHODS
     public long getId() {
         return id;
     }

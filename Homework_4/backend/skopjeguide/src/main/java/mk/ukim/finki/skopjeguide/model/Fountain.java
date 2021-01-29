@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * Java class for Fountain in Skopje.
+ */
 @Entity
 @Table(name = "fountain")
 public class Fountain {
@@ -19,6 +22,26 @@ public class Fountain {
     public Fountain() {
     }
 
+    /**
+     * Constructor with all parameters.
+     *
+     * @param id
+     * @param lon
+     * @param lat
+     * @param name
+     * @param website
+     * @param phone
+     */
+    public Fountain(long id, double lon, double lat, String name, String website, String phone) {
+        this.id = id;
+        this.lon = lon;
+        this.lat = lat;
+        this.name = name;
+        this.website = website;
+        this.phone = phone;
+    }
+
+    //GET AND SET METHODS
     public long getId() {
         return id;
     }
