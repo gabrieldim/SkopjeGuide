@@ -18,7 +18,7 @@ public interface MotelsRepository extends JpaRepository<Motel, Long> {
     /**
      * This is method and this methods function is to find the names that have not null values.
      *
-     * @return List<Attraction>
+     * @return List<Motel>
      */
     List<Motel> findByNameNotNull();
 
