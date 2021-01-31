@@ -26,7 +26,7 @@ public class FountainController {
      /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param fountainService
      */
 
     public FountainController(FountainService fountainService) {

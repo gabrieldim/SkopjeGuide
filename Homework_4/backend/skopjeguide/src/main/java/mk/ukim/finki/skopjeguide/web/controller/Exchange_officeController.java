@@ -28,7 +28,7 @@ public class Exchange_officeController {
        /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param exchange_officeService
      */
     public Exchange_officeController(Exchange_OfficeService exchange_officeService) {
         this.exchange_officeService = exchange_officeService;

@@ -26,7 +26,7 @@ public class MotelsController {
     /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param motelService
      */
     public MotelsController(MotelService motelService) {
         this.motelService = motelService;

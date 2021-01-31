@@ -26,7 +26,7 @@ public class AttractionController {
   /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param attractionService
      */
    
     public AttractionController(AttractionService attractionService) {

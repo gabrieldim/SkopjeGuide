@@ -28,7 +28,7 @@ public class CaffeController {
    /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param caffeService
      */
     public CaffeController(CaffeService caffeService) {
         this.caffeService = caffeService;

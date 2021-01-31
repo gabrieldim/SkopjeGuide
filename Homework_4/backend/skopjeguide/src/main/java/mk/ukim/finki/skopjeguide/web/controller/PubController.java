@@ -24,7 +24,7 @@ public class PubController {
    /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param pubService
      */
     public PubController(PubService pubService) {
         this.pubService = pubService;

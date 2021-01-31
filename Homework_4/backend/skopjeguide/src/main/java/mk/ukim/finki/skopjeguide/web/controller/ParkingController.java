@@ -24,7 +24,7 @@ public class ParkingController {
    /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param parkingService
      */
     public ParkingController(ParkingService parkingService) {
         this.parkingService = parkingService;
