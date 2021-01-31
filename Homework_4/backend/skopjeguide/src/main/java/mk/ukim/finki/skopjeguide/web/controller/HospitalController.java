@@ -26,7 +26,7 @@ public class HospitalController {
    /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param hospitalService
      */
     public HospitalController(HospitalService hospitalService) {
         this.hospitalService = hospitalService;

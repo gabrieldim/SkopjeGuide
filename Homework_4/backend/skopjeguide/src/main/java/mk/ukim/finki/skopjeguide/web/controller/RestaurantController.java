@@ -25,7 +25,7 @@ public class RestaurantController {
    /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param restaurantService
      */
     public RestaurantController(RestaurantService restaurantService) {
         this.restaurantService = restaurantService;

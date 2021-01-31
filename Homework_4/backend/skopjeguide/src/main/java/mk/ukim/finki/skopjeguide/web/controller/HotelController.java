@@ -25,7 +25,7 @@ public class HotelController {
      /**
      * Constructor with parameter.
      *
-     * @param repository
+     * @param hotelService
      */
    
     public HotelController(HotelService hotelService) {
